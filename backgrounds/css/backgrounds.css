@@ -173,7 +173,7 @@ h2 {
 		width: 33%;
 		height: 100%;
 		margin: 0 auto;
-		background: linear-gradient(to right, black, blue, deepskyblue, white, deepskyblue, blue, black);
+		background: -webkit-linear-gradient(left, black, blue, deepskyblue, white, deepskyblue, blue, black);background: linear-gradient(to right, black, blue, deepskyblue, white, deepskyblue, blue, black);
 	}
 	
 /* GREEN THEME */
@@ -183,7 +183,7 @@ h2 {
 		width: 100%;
 		height: 200px;
 		margin: auto;
-		background: radial-gradient( darkgoldenrod 35px, gold 50px, lawngreen 75px, green 100px, black 101px, transparent 125px);
+		background: -webkit-radial-gradient(darkgoldenrod 35px, gold 50px, lawngreen 75px, green 100px, black 101px, transparent 125px);background: radial-gradient( darkgoldenrod 35px, gold 50px, lawngreen 75px, green 100px, black 101px, transparent 125px);
 	}
 	
 	.greenEyesPupil {
@@ -207,11 +207,11 @@ h2 {
 	}
 	
 	.smileLeft {
-		background: linear-gradient(to top right, white, white, transparent, transparent, transparent);
+		background: -webkit-linear-gradient(bottom left, white, white, transparent, transparent, transparent);background: linear-gradient(to top right, white, white, transparent, transparent, transparent);
 	}
 	
 	.smileRight {
-		background: linear-gradient(to top left, white, white, transparent, transparent, transparent);
+		background: -webkit-linear-gradient(bottom right, white, white, transparent, transparent, transparent);background: linear-gradient(to top left, white, white, transparent, transparent, transparent);
 	}
 	
 /* RED THEME BLOCKS */
@@ -231,14 +231,14 @@ h2 {
 	.red {
 		width: 20%;
 		height: 20%;
-		background: linear-gradient(to right, red, rgba(255,0,0,0.7), red);
+		background: -webkit-linear-gradient(left, red, rgba(255,0,0,0.7), red);background: linear-gradient(to right, red, rgba(255,0,0,0.7), red);
 	}
 	
 	.purple {
 		left: 21%;
 		width: 56%;
 		height: 10%;
-		background: linear-gradient(to right, maroon, rgba(255,0,0,0.3), maroon);
+		background: -webkit-linear-gradient(left, maroon, rgba(255,0,0,0.3), maroon);background: linear-gradient(to right, maroon, rgba(255,0,0,0.3), maroon);
 		
 	}
 	
@@ -246,7 +246,7 @@ h2 {
 		top: 21%;
 		width: 20%;
 		height: 53.5%;
-		background: linear-gradient(to right, maroon, rgba(255,0,0,0.3), maroon);
+		background: -webkit-linear-gradient(left, maroon, rgba(255,0,0,0.3), maroon);background: linear-gradient(to right, maroon, rgba(255,0,0,0.3), maroon);
 	}
 	
 	.top {
@@ -268,13 +268,13 @@ h2 {
 	.orange {
 		width: 40%;
 		height: 17.5%;
-		background: linear-gradient(to right, darkorange, rgba(255, 140, 0,0.7), darkorange);
+		background: -webkit-linear-gradient(left, darkorange, rgba(255, 140, 0,0.7), darkorange);background: linear-gradient(to right, darkorange, rgba(255, 140, 0,0.7), darkorange);
 	}
 	
 	.yellow {
 		width: 14%;
 		height: 17.5%;
-		background: linear-gradient(to right, yellow, rgba(255, 247, 44,0.7), yellow);
+		background: -webkit-linear-gradient(left, yellow, rgba(255, 247, 44,0.7), yellow);background: linear-gradient(to right, yellow, rgba(255, 247, 44,0.7), yellow);
 	}
 	
 	.y_left,

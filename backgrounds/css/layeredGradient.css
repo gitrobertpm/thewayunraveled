@@ -19,14 +19,14 @@ body {
 a {
 	color: dodgerblue;
 	text-decoration: none;
-	transition-duration: .25s;
+	-webkit-transition-duration: .25s;transition-duration: .25s;
 	outline: 0;
 }
 
 a:hover, a:focus, a:active {
 	color: white;
 	text-shadow: 1px 1px 2px blue, -1px 1px 2px blue, -1px -1px 4px deepskyblue, 1px -1px 4px deepskyblue;
-	transition-duration: .5s;
+	-webkit-transition-duration: .5s;transition-duration: .5s;
 }
 
 

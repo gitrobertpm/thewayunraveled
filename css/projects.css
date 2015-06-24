@@ -13,14 +13,14 @@ body {
 a {
 	color: dodgerblue;
 	text-decoration: none;
-	transition-duration: .25s;
+	-webkit-transition-duration: .25s;transition-duration: .25s;
 	outline: 0;
 }
 
 a:hover, a:focus, a:active {
 	color: white;
 	text-shadow: 1px 1px 2px blue, -1px 1px 2px blue, -1px -1px 4px deepskyblue, 1px -1px 4px deepskyblue;
-	transition-duration: .5s;
+	-webkit-transition-duration: .5s;transition-duration: .5s;
 }
 
 #welcomeDiv {
@@ -43,12 +43,12 @@ a:hover, a:focus, a:active {
 
 /* HORIZONTAL RULE */
 .hrToDownRight {
-	transform: rotateZ(2.5deg);
+	-webkit-transform: rotateZ(2.5deg);transform: rotateZ(2.5deg);
 	margin: 50px 0;
 }
 
 .hrToDownLeft {
-	transform: rotateZ(-2.5deg);
+	-webkit-transform: rotateZ(-2.5deg);transform: rotateZ(-2.5deg);
 	margin: 50px 0;
 }
 
@@ -58,7 +58,7 @@ a:hover, a:focus, a:active {
 .projectDiv {
 	position: relative;
 	padding: 25px 0 35px;
-	perspective: 500px;
+	-webkit-perspective: 500px;perspective: 500px;
 	background-attachment: fixed !important;
 	background-size: 100% !important;
 	background-repeat: no-repeat !important;
@@ -116,8 +116,8 @@ a:hover, a:focus, a:active {
 	height: 65px;
 	margin: 0;
 	margin-left: -55px;
-	background: linear-gradient(to bottom, rgba(0,0,0,0.1), black);
-	transform: rotateX(-70deg);
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0.1), black);background: linear-gradient(to bottom, rgba(0,0,0,0.1), black);
+	-webkit-transform: rotateX(-70deg);transform: rotateX(-70deg);
 	z-index: -1;
 }
 
@@ -154,7 +154,7 @@ h1 {
 
 .table {
 	margin: 0 auto;
-	background: linear-gradient(to right, rgba(0,0,0,0.3), ivory, rgba(0,0,0,0.3));
+	background: -webkit-linear-gradient(left, rgba(0,0,0,0.3), ivory, rgba(0,0,0,0.3));background: linear-gradient(to right, rgba(0,0,0,0.3), ivory, rgba(0,0,0,0.3));
 }
 
 #top {
@@ -166,7 +166,7 @@ h1 {
 #column {
 	width: 50px;
 	height: 100px;
-	background: linear-gradient(to right, rgba(0,0,0,0.3), ivory, rgba(0,0,0,0.3));
+	background: -webkit-linear-gradient(left, rgba(0,0,0,0.3), ivory, rgba(0,0,0,0.3));background: linear-gradient(to right, rgba(0,0,0,0.3), ivory, rgba(0,0,0,0.3));
 	box-shadow: 0px 10px 2px rgba(0,0,0,0.5) inset;
 }
 

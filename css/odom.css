@@ -36,7 +36,7 @@ header {
 	left: 50%;
 	width: 75px;
 	height: 25px;
-	background: linear-gradient(to top, darkorange, orange, white, orange, white, orange, darkorange);
+	background: -webkit-linear-gradient(bottom, darkorange, orange, white, orange, white, orange, darkorange);background: linear-gradient(to top, darkorange, orange, white, orange, white, orange, darkorange);
 	z-index: 99;
 }
 
@@ -44,14 +44,14 @@ header {
 	margin-top: -45px;
 	margin-left: -75px;
 	border-radius: 50% 0 0 50%;
-	transform: skewY(45deg);
+	-webkit-transform: skewY(45deg);-ms-transform: skewY(45deg);transform: skewY(45deg);
 }
 
 #ring_R {
 	margin-top: 30px;
 	margin-right: -75px;
 	border-radius: 0 50% 50% 0;
-	transform: skewY(45deg);
+	-webkit-transform: skewY(45deg);-ms-transform: skewY(45deg);transform: skewY(45deg);
 }
 
 #ringShadow {
@@ -60,8 +60,8 @@ header {
 	left: 60px;
 	width: 110px;
 	height: 15px;
-	background: linear-gradient(to right, rgba(0,0,0,0.5), transparent);
-	transform: skewY(45deg);
+	background: -webkit-linear-gradient(left, rgba(0,0,0,0.5), transparent);background: linear-gradient(to right, rgba(0,0,0,0.5), transparent);
+	-webkit-transform: skewY(45deg);-ms-transform: skewY(45deg);transform: skewY(45deg);
 	z-index: 99;
 }
 
@@ -69,7 +69,7 @@ header {
 	width: 150px;
 	height: 150px;
 	margin: auto;
-	background: radial-gradient(farthest-corner at 65% 35%, white, orange, darkorange);
+	background: -webkit-radial-gradient(65% 35%, farthest-corner, white, orange, darkorange);background: radial-gradient(farthest-corner at 65% 35%, white, orange, darkorange);
 	border-radius: 50%;
 	z-index: 9;
 }
@@ -81,7 +81,7 @@ header {
 	left: 50%;
 	width: 25px;
 	height: 45px;
-	background:  radial-gradient(farthest-corner at 65% 55%, rgba(0,0,0,0.5), rgba(0,0,0,0.8), black);
+	background:  -webkit-radial-gradient(65% 55%, farthest-corner, rgba(0,0,0,0.5), rgba(0,0,0,0.8), black);background:  radial-gradient(farthest-corner at 65% 55%, rgba(0,0,0,0.5), rgba(0,0,0,0.8), black);
 	border: 3px solid white;
 	border-radius: 2.5px;
 	overflow: hidden;
@@ -115,17 +115,17 @@ header {
 /* WINDSHIELD */
 #windshield  {
 	position: relative;
-	perspective: 500px;
-	background: linear-gradient(to top, burlywood, antiquewhite, azure, lightblue, deepskyblue);
+	-webkit-perspective: 500px;perspective: 500px;
+	background: -webkit-linear-gradient(bottom, burlywood, antiquewhite, azure, lightblue, deepskyblue);background: linear-gradient(to top, burlywood, antiquewhite, azure, lightblue, deepskyblue);
 }
 
 #innerWindshield {
-	background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.2), transparent, rgba(0,0,0,0.2), rgba(0,0,0,0.7));
+	background: -webkit-linear-gradient(left, rgba(0,0,0,0.7), rgba(0,0,0,0.2), transparent, rgba(0,0,0,0.2), rgba(0,0,0,0.7));background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.2), transparent, rgba(0,0,0,0.2), rgba(0,0,0,0.7));
 }
 
 #innerWindshield2 {
 	padding-bottom: 10px;
-	background: linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.2), transparent, rgba(0,0,0,0.2), rgba(0,0,0,0.5));
+	background: -webkit-linear-gradient(bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.2), transparent, rgba(0,0,0,0.2), rgba(0,0,0,0.5));background: linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.2), transparent, rgba(0,0,0,0.2), rgba(0,0,0,0.5));
 	overflow: hidden;
 }
 
@@ -133,7 +133,7 @@ header {
 	width: 5px;
 	height: 15px;
 	margin: auto;
-	background: linear-gradient(to right, black, lightgrey, black);
+	background: -webkit-linear-gradient(left, black, lightgrey, black);background: linear-gradient(to right, black, lightgrey, black);
 	border-left: 1px solid black;
 	border-right: 1px solid black;
 }
@@ -142,7 +142,7 @@ header {
 	width: 100px;
 	height: 25px;
 	margin: auto;
-	background: linear-gradient(to top, grey, lightgrey, grey);
+	background: -webkit-linear-gradient(bottom, grey, lightgrey, grey);background: linear-gradient(to top, grey, lightgrey, grey);
 	border: 2px solid black;
 	border-radius: 5px;
 }
@@ -164,7 +164,7 @@ p {
 	background: black;
 	border-top: 1px solid white;
 	border-radius: 50% 50% 0 0;
-	transform: skewY(-5deg);
+	-webkit-transform: skewY(-5deg);-ms-transform: skewY(-5deg);transform: skewY(-5deg);
 }
 
 #wiper_L {
@@ -183,7 +183,7 @@ p {
 	width: 2.5px;
 	height: 75px;
 	background: black;
-	transform: rotateZ(79deg);
+	-webkit-transform: rotateZ(79deg);transform: rotateZ(79deg);
 }
 
 #wiperArm_L {
@@ -205,18 +205,18 @@ p {
 	width: 90%;
 	max-width: 1000px;
 	margin: 25px auto auto;
-	background: linear-gradient(darkkhaki, khaki, darkkhaki);
+	background: -webkit-linear-gradient(darkkhaki, khaki, darkkhaki);background: linear-gradient(darkkhaki, khaki, darkkhaki);
 	border-radius: 25px 25px 200px 200px;
 	box-shadow: 5px 15px 10px rgba(0,0,0,0.5) inset, -5px 0px 10px rgba(0,0,0,0.5) inset;
 }
 
 #innerFormDiv {
-	background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.2), transparent, rgba(0,0,0,0.2), rgba(0,0,0,0.5));
+	background: -webkit-linear-gradient(left, rgba(0,0,0,0.5), rgba(0,0,0,0.2), transparent, rgba(0,0,0,0.2), rgba(0,0,0,0.5));background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.2), transparent, rgba(0,0,0,0.2), rgba(0,0,0,0.5));
 }
 
 #innerFormDiv2 {
 	padding-top: 5px;
-	background: linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.2), transparent, rgba(0,0,0,0.2), rgba(0,0,0,0.5));
+	background: -webkit-linear-gradient(bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.2), transparent, rgba(0,0,0,0.2), rgba(0,0,0,0.5));background: linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.2), transparent, rgba(0,0,0,0.2), rgba(0,0,0,0.5));
 }
 
 #innerFormDiv2  h2 {
@@ -278,15 +278,15 @@ button:active, button:focus, button:hover {
 	width: 90%;
 	max-width: 400px;
 	margin: auto;
-	background: linear-gradient(darkkhaki, khaki, darkkhaki);
+	background: -webkit-linear-gradient(darkkhaki, khaki, darkkhaki);background: linear-gradient(darkkhaki, khaki, darkkhaki);
 }
 
 #outerClockDiv2 {
-	background: linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.2), transparent, rgba(0,0,0,0.2), rgba(0,0,0,0.5));
+	background: -webkit-linear-gradient(bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.2), transparent, rgba(0,0,0,0.2), rgba(0,0,0,0.5));background: linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.2), transparent, rgba(0,0,0,0.2), rgba(0,0,0,0.5));
 }
 
 #clock {
-	background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.2), transparent, rgba(0,0,0,0.2), rgba(0,0,0,0.5));
+	background: -webkit-linear-gradient(left, rgba(0,0,0,0.5), rgba(0,0,0,0.2), transparent, rgba(0,0,0,0.2), rgba(0,0,0,0.5));background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.2), transparent, rgba(0,0,0,0.2), rgba(0,0,0,0.5));
 	border: 1px solid black;
 	border-radius: 2px;
 }

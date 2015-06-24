@@ -5,7 +5,7 @@ body {
 }
 
 #welcomeDiv {
-	background: linear-gradient(to right, white, transparent, white);
+	background: -webkit-linear-gradient(left, white, transparent, white);background: linear-gradient(to right, white, transparent, white);
 }
 
 #background {
@@ -17,7 +17,7 @@ body {
 	background-repeat: no-repeat !important;
 	background-position: center top !important;
 	background-size: 350px 225px !important;
-	filter: blur(2px) hue-rotate(150deg);
+	-webkit-filter: blur(2px) hue-rotate(150deg);filter: blur(2px) hue-rotate(150deg);
 	z-index: -1;
 }
 
@@ -51,7 +51,7 @@ img {
 	padding-top: 15px;
 	padding-bottom: 20px;
 	overflow: hidden;
-	transition-duration: .5s;
+	-webkit-transition-duration: .5s;transition-duration: .5s;
 }
 
 .aboutSubsection {
@@ -64,7 +64,7 @@ img {
 	margin: 10px auto 15px;
 	background-size: 100% 100% !important;
 	background-repeat: no-repeat !important;
-	transition-duration: .5s;
+	-webkit-transition-duration: .5s;transition-duration: .5s;
 	-webkit-filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.3));
 	-ms-filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.3));
 	filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.3));
@@ -87,13 +87,20 @@ img {
 	margin: 50px auto 35px;
 	padding-top: 50px;
 	padding-bottom: 50px;
-	background: linear-gradient(black, rgba(100,150,100,0.7), white);
+	background: -webkit-linear-gradient(black, rgba(100,150,100,0.7), white);background: linear-gradient(black, rgba(100,150,100,0.7), white);
 }
 
 .transitioningText {
 	font-size: 2em;
 }
 
+@-webkit-keyframes textGrow {
+	0% {color: transparent; text-shadow: none;}
+	25% {color: green; text-shadow: 0px -2px 0px black, 1px -2px 2px black;}
+	50% {color: green; text-shadow: none;}
+	75% {color: green; text-shadow: none;}
+	100% {color: transparent; text-shadow: none;}
+}
 @keyframes textGrow {
 	0% {color: transparent; text-shadow: none;}
 	25% {color: green; text-shadow: 0px -2px 0px black, 1px -2px 2px black;}
@@ -104,7 +111,7 @@ img {
 
 #techTalk {
 	position: relative;
-	perspective: 1500px;
+	-webkit-perspective: 1500px;perspective: 1500px;
 }
 
 .cubeSide {
@@ -113,28 +120,27 @@ img {
 	left: 50%;
 	width: 225px;
 	height: 225px;
-	/* border: 1px solid deepskyblue; */
 }
 
 #cubeSide1 {
 	top: 100px;
 	margin-left: -115px;
-	background: linear-gradient(to bottom right, rgba(255,255,255,0.9), rgba(225,225,225,0.9));
-	transform: skewY(30deg);
+	background: -webkit-linear-gradient(top left, rgba(255,255,255,0.9), rgba(225,225,225,0.9));background: linear-gradient(to bottom right, rgba(255,255,255,0.9), rgba(225,225,225,0.9));
+	-webkit-transform: skewY(30deg);-ms-transform: skewY(30deg);transform: skewY(30deg);
 }
 
 #cubeSide2 {
 	top: 315px;
 	margin-left: -160px;
-	background: linear-gradient(to bottom right, rgba(255,255,255,0.9), rgba(225,225,225,0.9));
-	transform: rotateZ(30deg) skewX(-30deg);
+	background: -webkit-linear-gradient(top left, rgba(255,255,255,0.9), rgba(225,225,225,0.9));background: linear-gradient(to bottom right, rgba(255,255,255,0.9), rgba(225,225,225,0.9));
+	-webkit-transform: rotateZ(30deg) skewX(-30deg);transform: rotateZ(30deg) skewX(-30deg);
 }
 
 #cubeSide3 {
 	top: 510px;
 	margin-left: -115px;
-	background: linear-gradient(to top left, rgba(255,255,255,0.9), rgba(200,200,200,0.9));
-	transform: skewY(-30deg);
+	background: -webkit-linear-gradient(bottom right, rgba(255,255,255,0.9), rgba(200,200,200,0.9));background: linear-gradient(to top left, rgba(255,255,255,0.9), rgba(200,200,200,0.9));
+	-webkit-transform: skewY(-30deg);-ms-transform: skewY(-30deg);transform: skewY(-30deg);
 }
 
 #yySpeech {
@@ -147,10 +153,6 @@ img {
 
 #myInfo_0 {
 	position: relative;
-}
-
-.mi {
-	/* margin: 10px auto auto; */
 }
 
 .eAeExperience {
@@ -219,19 +221,19 @@ img {
 	margin-left: -150px;
 	width: 300px;
 	padding: 25px 10px 5px;
-	background: linear-gradient(to bottom right, rgba(235,235,235,1) 10%, white 50%);
-	filter: drop-shadow(5px 5px 10px rgba(200,200,200,0.9));
+	background: -webkit-linear-gradient(top left, rgba(235,235,235,1) 10%, white 50%);background: linear-gradient(to bottom right, rgba(235,235,235,1) 10%, white 50%);
+	-webkit-filter: drop-shadow(5px 5px 10px rgba(200,200,200,0.9));filter: drop-shadow(5px 5px 10px rgba(200,200,200,0.9));
 }
 .ribbon h3 {
+	position: relative;
 	display: block;
 	height: 40px;
 	width: 325px;
 	margin: 0;
 	padding: 5px 10px 5px 30px;
-	position: relative;
 	left: -30px;
 	color: white;
-	background: linear-gradient(to right, black, white);
+	background: -webkit-linear-gradient(left, black, white);background: linear-gradient(to right, black, white);
 	box-shadow: 0 1px 2px rgba(0,0,0,0.3);
 }
 .ribbon h3::before {
@@ -253,9 +255,9 @@ img {
 	height: 8px;
 	bottom: -6px;
 	border: none;
-	border-top:2px solid black;
-	border-left:1px solid black;    
-	border-bottom:1px solid black;    
+	border-top: 2px solid black;
+	border-left: 1px solid black;    
+	border-bottom: 1px solid black;    
 	background: rgb(61,0,0);
 	border-radius: 5px 0px 0px 5px;
 	box-shadow: 0 1px 2px rgba(0,0,0,0.3), inset 2px 1px 2px rgba(0,0,0,0.3);
@@ -267,13 +269,8 @@ img {
 	border-bottom: 2px solid black;
 }
 
-.skill {
-	/* border: 1px solid blue !important; */
-}
-
 .skill div {
 	display: inline-block;
-	/* border: 1px solid black; */
 }
 
 .skillInfo {
@@ -286,15 +283,13 @@ img {
 	font-size: 0.9em;
 	width: 90px;
 	padding-left: 0px !important;
-	/* border: 1px solid black; */
 }
 
 .skillLogo {
 	width: 35px;
 	height: 35px;
 	margin-bottom: -10px;
-	/* border: 1px solid black; */
-	filter: drop-shadow(-5px 5px 5px rgba(0,0,0,0.3));
+	-webkit-filter: drop-shadow(-5px 5px 5px rgba(0,0,0,0.3));filter: drop-shadow(-5px 5px 5px rgba(0,0,0,0.3));
 }
 
 .skillLev {
@@ -302,7 +297,6 @@ img {
 	width: 135px;
 	height: 25px;
 	margin-bottom: -8px;
-	/* border: 1px solid red !important; */
 }
 
 .skillNum {
@@ -313,85 +307,84 @@ img {
 	margin: 0px auto !important;
 	padding: 0px !important;
 	text-shadow: 1px 1px 0px black;
-	/* border: 1px solid black; */
 }
 
 .skillLevDis {
 	text-align: right;
 	height: 100%;
 	padding-right: 5px;
-	filter: drop-shadow(-5px 5px 5px rgba(0,0,0,0.3));
+	-webkit-filter: drop-shadow(-5px 5px 5px rgba(0,0,0,0.3));filter: drop-shadow(-5px 5px 5px rgba(0,0,0,0.3));
 }
 
 /* HTML */
 #skillLevDis0 {
-	background: linear-gradient(to right, black, orange);
+	background: -webkit-linear-gradient(left, black, orange);background: linear-gradient(to right, black, orange);
 	width: 110px;
 }
 
 /* CSS */
 #skillLevDis1 {
-	background: linear-gradient(to right, black, dodgerblue);
+	background: -webkit-linear-gradient(left, black, dodgerblue);background: linear-gradient(to right, black, dodgerblue);
 	width: 110px;
 }
 
 /* JAVASCRIPT */
 #skillLevDis2 {
-	background: linear-gradient(to right, black, red);
+	background: -webkit-linear-gradient(left, black, red);background: linear-gradient(to right, black, red);
 	width: 83px;
 }
 
 /* ILLUSTRATOR */
 #skillLevDis3 {
-	background: linear-gradient(to right, black, orange);
+	background: -webkit-linear-gradient(left, black, orange);background: linear-gradient(to right, black, orange);
 	width: 97px;
 }
 
 /* PHOTOSHOP */
 #skillLevDis4 {
-	background: linear-gradient(to right, black, dodgerblue);
+	background: -webkit-linear-gradient(left, black, dodgerblue);background: linear-gradient(to right, black, dodgerblue);
 	width: 70px;
 }
 
 /* GITHUB */
 #skillLevDis5 {
-	background: linear-gradient(to right, black, purple);
+	background: -webkit-linear-gradient(left, black, purple);background: linear-gradient(to right, black, purple);
 	width: 54px;
 }
 
 /* JQUERY */
 #skillLevDis6 {
-	background: linear-gradient(to right, black, darkblue);
+	background: -webkit-linear-gradient(left, black, darkblue);background: linear-gradient(to right, black, darkblue);
 	width: 40px;
 }
 
 /* AJAX */
 #skillLevDis7 {
-	background: linear-gradient(to right, black, blue);
+	background: -webkit-linear-gradient(left, black, blue);background: linear-gradient(to right, black, blue);
 	width: 40px;
 }
 
 /* NODE */
 #skillLevDis8 {
-	background: linear-gradient(to right, black, green);
+	background: -webkit-linear-gradient(left, black, green);background: linear-gradient(to right, black, green);
 	width: 40px;
 }
 
 /* ANGULAR */
 #skillLevDis9 {
-	background: linear-gradient(to right, black, red);
+	background: -webkit-linear-gradient(left, black, red);background: linear-gradient(to right, black, red);
 	width: 27px;
 }
 
 /* PHP */
 #skillLevDis10 {
-	background: linear-gradient(to right, black, purple);
+	background: -webkit-linear-gradient(left, black, purple);background: linear-gradient(to right, black, purple);
 	width: 27px;
 }
 
 /* MYSQL */
 #skillLevDis11 {
-	background: linear-gradient(to right, dodgerblue, orange);
+	background: -webkit-linear-gradient(left, dodgerblue, orange);background: linear-gradient(to right, dodgerblue, orange);
 	width: 27px;
 }
 
@@ -413,7 +406,7 @@ img {
 	#background {
 		top: 90px;
 		background-size: 500px 350px !important;
-		filter: blur(3px) hue-rotate(150deg);
+		-webkit-filter: blur(3px) hue-rotate(150deg);filter: blur(3px) hue-rotate(150deg);
 	}
 
 	#welcomeDiv {
@@ -459,16 +452,16 @@ img {
 		border-style:solid;
 		border-width: 25px;
 		border-color: transparent transparent transparent rgb(0,50,0);
-		filter: blur(1px);
+		-webkit-filter: blur(1px);filter: blur(1px);
 	}
 
 	#triangle1 {
-		transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);-ms-transform: rotate(45deg);transform: rotate(45deg);
 		margin-left: -197px;
 	}
 	
 	#triangle2 {
-		transform: rotate(135deg);
+		-webkit-transform: rotate(135deg);-ms-transform: rotate(135deg);transform: rotate(135deg);
 		margin-left: 153px;
 	}
 	
@@ -485,23 +478,23 @@ img {
 	#cubeSide1 {
 		top: 260px;
 		margin-left: -225px;
-		background: linear-gradient(to bottom right, rgba(255,255,255,0.9), rgba(225,225,225,0.9));
-		transform: skewY(30deg);
+		background: -webkit-linear-gradient(top left, rgba(255,255,255,0.9), rgba(225,225,225,0.9));background: linear-gradient(to bottom right, rgba(255,255,255,0.9), rgba(225,225,225,0.9));
+		-webkit-transform: skewY(30deg);-ms-transform: skewY(30deg);transform: skewY(30deg);
 	}
 
 	#cubeSide2 {
 		top: 85px;
 		width: 260px;
 		margin-left: -130px;
-		background: linear-gradient(to bottom right, rgba(255,255,255,0.9), rgba(225,225,225,0.9));
-		transform: rotateZ(30deg) skewX(-30deg);
+		background: -webkit-linear-gradient(top left, rgba(255,255,255,0.9), rgba(225,225,225,0.9));background: linear-gradient(to bottom right, rgba(255,255,255,0.9), rgba(225,225,225,0.9));
+		-webkit-transform: rotateZ(30deg) skewX(-30deg);transform: rotateZ(30deg) skewX(-30deg);
 	}
 
 	#cubeSide3 {
 		top: 260px;
 		margin-left: 0px;
-		background: linear-gradient(to top left, rgba(255,255,255,0.9), rgba(200,200,200,0.9));
-		transform: skewY(-30deg);
+		background: -webkit-linear-gradient(bottom right, rgba(255,255,255,0.9), rgba(200,200,200,0.9));background: linear-gradient(to top left, rgba(255,255,255,0.9), rgba(200,200,200,0.9));
+		-webkit-transform: skewY(-30deg);-ms-transform: skewY(-30deg);transform: skewY(-30deg);
 	}
 	
 	#aUra {
@@ -521,17 +514,17 @@ img {
 		left: 50%;
 		margin-left: -137.5px;
 		width: 275px;
-		transition-duration: .5s;
+		-webkit-transition-duration: .5s;transition-duration: .5s;
 	}
 	
 	#myInfo_1 {
 		margin-left: -300px;
-		transform: rotate(-90deg);
+		-webkit-transform: rotate(-90deg);-ms-transform: rotate(-90deg);transform: rotate(-90deg);
 	}
 	
 	#myInfo_2 {
 		margin-left: 50px;
-		transform: rotate(90deg);
+		-webkit-transform: rotate(90deg);-ms-transform: rotate(90deg);transform: rotate(90deg);
 	}
 	
 	#thanks {
@@ -752,7 +745,7 @@ img {
 		left: 50%;
 		width: 350px;
 		margin-left: -175px;
-		transform: rotate(-90deg);
+		-webkit-transform: rotate(-90deg);-ms-transform: rotate(-90deg);transform: rotate(-90deg);
 		box-shadow: -5px -5px 5px rgba(0,0,0,0.3);
 	}
 	
@@ -766,15 +759,15 @@ img {
 		width: 500px !important;
 		top: 360px;
 		left: -225px;
-		transform: rotate(90deg);
+		-webkit-transform: rotate(90deg);-ms-transform: rotate(90deg);transform: rotate(90deg);
 	}
 	
 	.skillInfo {
-		transform: rotate(35deg);
+		-webkit-transform: rotate(35deg);-ms-transform: rotate(35deg);transform: rotate(35deg);
 	}
 	
 	.skillNum {
-		transform: rotate(90deg);
+		-webkit-transform: rotate(90deg);-ms-transform: rotate(90deg);transform: rotate(90deg);
 	}
 	
 	#interests {

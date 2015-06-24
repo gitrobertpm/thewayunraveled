@@ -2,7 +2,7 @@
 
 body {
 	padding-top: 45px;
-	background: linear-gradient(deepskyblue, white, white);
+	background: -webkit-linear-gradient(deepskyblue, white, white);background: linear-gradient(deepskyblue, white, white);
 }
 
 #navTitle {
@@ -23,7 +23,7 @@ header {
 #deviceWrapper {
 	position: relative;
 	text-align: center;
-	background: linear-gradient(ivory, white);
+	background: -webkit-linear-gradient(ivory, white);background: linear-gradient(ivory, white);
 	width: 90%;
 	max-width: 1000px;
 	margin: 25px auto 0;
@@ -41,7 +41,7 @@ header {
 	max-width: 850px;
 	margin: 0px auto 15px;
 	padding: 5px;
-	background: linear-gradient(75deg, red, white, red, red, red, white, red);
+	background: -webkit-linear-gradient(15deg, red, white, red, red, red, white, red);background: linear-gradient(75deg, red, white, red, red, red, white, red);
 	border-bottom: 1px solid white;
 	border-radius: 45px 45px 0 0;
 	box-shadow: 2px 2px 3px rgba(0,0,0,.5) inset, -2px 2px 3px rgba(0,0,0,.5) inset;
@@ -64,7 +64,7 @@ header {
 	padding-bottom: 25px;
 	padding-left: 5px;
 	padding-right: 5px;
-	background: linear-gradient(75deg, red, white, red, red, red, white, red, red, white);
+	background: -webkit-linear-gradient(15deg, red, white, red, red, red, white, red, red, white);background: linear-gradient(75deg, red, white, red, red, red, white, red, red, white);
 	border-bottom: 1px solid white;
 	box-shadow: 2px 2px 3px rgba(0,0,0,.5) inset, -2px 2px 3px rgba(0,0,0,.5) inset;
 }
@@ -81,7 +81,7 @@ button  {
 button:enabled {
 	font-weight: bold;
 	background: ivory;
-	background: radial-gradient(circle, white, dodgerblue, deepskyblue);
+	background: -webkit-radial-gradient(circle, white, dodgerblue, deepskyblue);background: radial-gradient(circle, white, dodgerblue, deepskyblue);
 	box-shadow: 1px 1px 5px rgba(0, 0, 255, 0.3), 1px -1px 5px rgba(0, 0, 255, 0.3), -1px 1px 5px rgba(0, 0, 255, 0.3), -1px -1px 5px rgba(0, 0, 255, 0.3);
 }
 
@@ -126,7 +126,7 @@ button:disabled {
 /* QUESTION SECTION */
 #questionBorderDiv {
 	width: 90%;
-	background: linear-gradient(grey, lightgrey, lightgrey, white, lightgrey, lightgrey, grey);
+	background: -webkit-linear-gradient(grey, lightgrey, lightgrey, white, lightgrey, lightgrey, grey);background: linear-gradient(grey, lightgrey, lightgrey, white, lightgrey, lightgrey, grey);
 	margin: 25px auto;
 	padding: 2px;
 	border: 2px solid black;
@@ -168,7 +168,7 @@ button:disabled {
 	min-height: 100%;
 	width: 50px;
 	margin: 0 auto;
-	background: linear-gradient(to right, transparent, transparent, transparent, deepskyblue, transparent, transparent, transparent);
+	background: -webkit-linear-gradient(left, transparent, transparent, transparent, deepskyblue, transparent, transparent, transparent);background: linear-gradient(to right, transparent, transparent, transparent, deepskyblue, transparent, transparent, transparent);
 	-webkit-animation: nightRider 2s linear infinite alternate;
 	animation: nightRider 2s linear infinite alternate;
 }
@@ -205,7 +205,7 @@ button:disabled {
 	height: 100%;
 	width: 50px;
 	margin-left: -25px;
-	background: linear-gradient(to right, transparent, transparent, transparent, transparent, rgba(255,0,0,0.5), red, rgba(255,0,0,0.5), transparent, transparent, transparent, transparent);
+	background: -webkit-linear-gradient(left, transparent, transparent, transparent, transparent, rgba(255,0,0,0.5), red, rgba(255,0,0,0.5), transparent, transparent, transparent, transparent);background: linear-gradient(to right, transparent, transparent, transparent, transparent, rgba(255,0,0,0.5), red, rgba(255,0,0,0.5), transparent, transparent, transparent, transparent);
 }
 
 #scale p {
@@ -273,7 +273,7 @@ button:disabled {
 /* MEDIA QUERRIES */
 @media screen and (min-width: 375px) {
 	#device {
-		background: linear-gradient(75deg, red, white, red, red, red, white, red, red, red, red, white);
+		background: -webkit-linear-gradient(15deg, red, white, red, red, red, white, red, red, red, red, white);background: linear-gradient(75deg, red, white, red, red, red, white, red, red, red, red, white);
 	}
 	
 	#doIt {
@@ -287,11 +287,11 @@ button:disabled {
 
 @media screen and (min-width: 550px) {
 	#titleDiv {
-		background: linear-gradient(65deg, red, white, red, red, red, white, red);
+		background: -webkit-linear-gradient(25deg, red, white, red, red, red, white, red);background: linear-gradient(65deg, red, white, red, red, red, white, red);
 	}
 	
 	#device {
-		background: linear-gradient(65deg, red, white, red, red, red, white, red, red, red, white);
+		background: -webkit-linear-gradient(25deg, red, white, red, red, red, white, red, red, red, white);background: linear-gradient(65deg, red, white, red, red, red, white, red, red, red, white);
 	}
 	
 	#question {
@@ -337,7 +337,7 @@ button:disabled {
 	#titleDiv {
 		margin-top: 25px;
 		margin-bottom: 25px;
-		background: linear-gradient(55deg, red, white, red, red, red, white, red);
+		background: -webkit-linear-gradient(35deg, red, white, red, red, red, white, red);background: linear-gradient(55deg, red, white, red, red, red, white, red);
 		border-radius: 100px 100px 0 0;
 	}
 	
@@ -351,7 +351,7 @@ button:disabled {
 	}
 	
 	#device {
-		background: linear-gradient(55deg, red, white, red, red, red, white, red, red, red, white);
+		background: -webkit-linear-gradient(35deg, red, white, red, red, red, white, red, red, red, white);background: linear-gradient(55deg, red, white, red, red, red, white, red, red, red, white);
 	}
 
 	#question,
@@ -398,20 +398,20 @@ button:disabled {
 
 @media screen and (min-width: 850px) {
 	#titleDiv {
-		background: linear-gradient(45deg, red, white, red, red, red, white, red);
+		background: -webkit-linear-gradient(45deg, red, white, red, red, red, white, red);background: linear-gradient(45deg, red, white, red, red, red, white, red);
 	}
 
 	#device {
-		background: linear-gradient(45deg, red, white, red, red, red, white, red, red, white);
+		background: -webkit-linear-gradient(45deg, red, white, red, red, red, white, red, red, white);background: linear-gradient(45deg, red, white, red, red, red, white, red, red, white);
 	}
 }
 
 @media screen and (min-width: 1000px) {
 	#titleDiv {
-		background: linear-gradient(45deg, red, white, red, red, red, white, red);
+		background: -webkit-linear-gradient(45deg, red, white, red, red, red, white, red);background: linear-gradient(45deg, red, white, red, red, red, white, red);
 	}
 
 	#device {
-		background: linear-gradient(45deg, red, white, red, red, red, red, red, white, red, red, red, red, white);
+		background: -webkit-linear-gradient(45deg, red, white, red, red, red, red, red, white, red, red, red, red, white);background: linear-gradient(45deg, red, white, red, red, red, red, red, white, red, red, red, red, white);
 	}
 }
