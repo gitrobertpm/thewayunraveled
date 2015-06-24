@@ -38,12 +38,12 @@ button {
 	margin: 10px;
 	padding: 5px 10px 7.5px;
 	border-radius: 5px;
-	background: linear-gradient(lightblue, dodgerblue, blue, navy);
+	background: -webkit-linear-gradient(lightblue, dodgerblue, blue, navy);background: linear-gradient(lightblue, dodgerblue, blue, navy);
 }
 
 button:disabled {
 	color: black;
-	background: linear-gradient(lightgrey, grey, darkgrey, black);
+	background: -webkit-linear-gradient(lightgrey, grey, darkgrey, black);background: linear-gradient(lightgrey, grey, darkgrey, black);
 }
 
 /* QUICKSTYLE CHANGE CLASSES */
@@ -61,7 +61,7 @@ button:disabled {
 	margin: 5px auto;
 	padding-top: 5px;
 	padding-bottom: 7.5px;
-	background: linear-gradient(to right, transparent, transparent, rgba(200,200,200,0.5), transparent, transparent);
+	background: -webkit-linear-gradient(left, transparent, transparent, rgba(200,200,200,0.5), transparent, transparent);background: linear-gradient(to right, transparent, transparent, rgba(200,200,200,0.5), transparent, transparent);
 }
 
 .thin {
@@ -98,7 +98,7 @@ button:disabled {
 	background: rgba(255,255,255,0.8);
 	border-radius: 15px 15px 0 0;
 	border-bottom: 1px solid black;
-	transition-duration: 1s;
+	-webkit-transition-duration: 1s;transition-duration: 1s;
 	cursor: pointer;
 	z-index: 9999;
 }
@@ -112,7 +112,7 @@ button:disabled {
 	background-position: left;
 	background-size: 35px 40px;
 	border-radius: 15px 15px 0 0;
-	transition-duration: 1s;
+	-webkit-transition-duration: 1s;transition-duration: 1s;
 	z-index: 9999999;
 }
 
@@ -124,7 +124,7 @@ button:disabled {
 	top: 10px;
 	left: 500px;
 	width: 85px;
-	background: linear-gradient(to right, rgba(255,255,255,0.9), transparent);
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0.9), transparent);background: linear-gradient(to right, rgba(255,255,255,0.9), transparent);
 	border-radius: 10px;
 	transform: rotate(-25deg);
 }
@@ -132,27 +132,27 @@ button:disabled {
 #innerNavWrapper a:active, #innerNavWrapper a:focus, #innerNavWrapper a:hover {
 	color: rgb(200,200,200);
 	text-shadow: 1px 1px 0px rgb(75,75,75);
-	transition-duration: .25s;
+	-webkit-transition-duration: .25s;transition-duration: .25s;
 }
 
 #navHome {
 	margin-left: -110px;
-	transition-duration: .5s;
+	-webkit-transition-duration: .5s;transition-duration: .5s;
 }
 
 #navAbout {
 	margin-left: -65px;
-	transition-duration: .75s;
+	-webkit-transition-duration: .75s;transition-duration: .75s;
 }
 
 #navContact {
 	margin-left: -15px;
-	transition-duration: 1s;
+	-webkit-transition-duration: 1s;transition-duration: 1s;
 }
 
 #navProjects {
 	margin-left: 40px;
-	transition-duration: 1.25s;
+	-webkit-transition-duration: 1.25s;transition-duration: 1.25s;
 }
 
 #closeNav {
@@ -166,7 +166,7 @@ button:disabled {
 	border-left: 1px solid pink;
 	border-bottom: 3px solid darkred;
 	border-right: 2px solid darkred;
-	transition-duration: 1.5s;
+	-webkit-transition-duration: 1.5s;transition-duration: 1.5s;
 	opacity: 0;
 	z-index: 9999;
 }
@@ -189,13 +189,23 @@ button:disabled {
 	left: 5px;
 	opacity: 0;
 	z-index: 999;
-	animation: navShow 10s ease-in-out 3s forwards;
+	-webkit-animation: navShow 10s ease-in-out 3s forwards;animation: navShow 10s ease-in-out 3s forwards;
 }
 
+@-webkit-keyframes navShow {
+	0% {opacity: 0; left: 50%; margin-left: -25px;}
+	10% {opacity: 1; -webkit-transform: scale(1.5); transform: scale(1.5);}
+	15% {text-shadow: 5px 5px 3px rgba(0,0,0,0.5); -webkit-transform: scale(1); transform: scale(1);}
+	25% {left: 55%;  margin-left: -25px;}
+	35% {left: 5px; margin-left: 0;}
+	75% {opacity: 1;}
+	85% {text-shadow: none;}
+	100% {opacity: 0;}
+}
 @keyframes navShow {
 	0% {opacity: 0; left: 50%; margin-left: -25px;}
-	10% {opacity: 1; transform: scale(1.5);}
-	15% {text-shadow: 5px 5px 3px rgba(0,0,0,0.5); transform: scale(1);}
+	10% {opacity: 1; -webkit-transform: scale(1.5); transform: scale(1.5);}
+	15% {text-shadow: 5px 5px 3px rgba(0,0,0,0.5); -webkit-transform: scale(1); transform: scale(1);}
 	25% {left: 55%;  margin-left: -25px;}
 	35% {left: 5px; margin-left: 0;}
 	75% {opacity: 1;}
@@ -248,11 +258,11 @@ footer li {
 	}
 	
 	footer ul:nth-of-type(2) a {
-	padding-right: 30px;
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: right;
-}
+		padding-right: 30px;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: right;
+	}
 
 	footer p {
 		clear: both;
@@ -272,8 +282,8 @@ footer li {
 		border-top: 1px solid black;
 		border-bottom: 1px solid black;
 		border-radius: 0 0 0 0;
-		transform: rotate(0deg);
-		transition-duration: 1s;
+		-webkit-transform: rotate(0deg);-ms-transform: rotate(0deg);transform: rotate(0deg);
+		-webkit-transition-duration: 1s;transition-duration: 1s;
 	}
 	
 	#navHome {

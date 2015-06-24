@@ -2,10 +2,14 @@
 
 #wrapper {
 	background: darkblue;
-	animation: skyfall 4s ease-in-out .5s forwards;
+	-webkit-animation: skyfall 4s ease-in-out .5s forwards;animation: skyfall 4s ease-in-out .5s forwards;
 }
 
 /* TURN NIGHT TO DAY */
+@-webkit-keyframes skyfall {
+	0% {background: darkblue;}
+	100% {background: deepskyblue;}
+}
 @keyframes skyfall {
 	0% {background: darkblue;}
 	100% {background: deepskyblue;}
@@ -15,7 +19,7 @@
 	position: relative;
 	padding-top: 50px;
 	padding-bottom: 1800px;
-	background: radial-gradient(white 45%, rgba(255,255,255,0.7), rgba(225,225,225,0.3));
+	background: -webkit-radial-gradient(white 45%, rgba(255,255,255,0.7), rgba(225,225,225,0.3));background: radial-gradient(white 45%, rgba(255,255,255,0.7), rgba(225,225,225,0.3));
 	background-attachment: fixed;
 	overflow: hidden;
 }
@@ -37,7 +41,7 @@
 	height: 175px;
 	width: 250px;
 	overflow: hidden;
-	transition-duration: .5s;
+	-webkit-transition-duration: .5s;transition-duration: .5s;
 }
 
 /* MISSION STATEMENT(MS) SECTION */
@@ -72,7 +76,7 @@
 
 /* ANGLE GLOBE IN MS SECTION */
 #coolGlobe {
-	transform: rotate(23deg);
+	-webkit-transform: rotate(23deg);-ms-transform: rotate(23deg);transform: rotate(23deg);
 }
 
 /* DIVE BEHIND THE GLOBE WHERE THE GRADIENT ANIMATIONS ARE CREATED WITH JS */
@@ -139,21 +143,21 @@
 }
 
 #yes {
-	background: linear-gradient(lawngreen, lightgreen, green, darkgreen, black);
+	background: -webkit-linear-gradient(lawngreen, lightgreen, green, darkgreen, black);background: linear-gradient(lawngreen, lightgreen, green, darkgreen, black);
 }
 
 #no {
-	background: linear-gradient(salmon, tomato, red, firebrick, black);
+	background: -webkit-linear-gradient(salmon, tomato, red, firebrick, black);background: linear-gradient(salmon, tomato, red, firebrick, black);
 }
 
 #yes:disabled {
 	color: black;
-	background: linear-gradient(lightgrey, grey, darkgrey, black);
+	background: -webkit-linear-gradient(lightgrey, grey, darkgrey, black);background: linear-gradient(lightgrey, grey, darkgrey, black);
 }
 
 #no:disabled {
 	color: black;
-	background: linear-gradient(lightgrey, grey, darkgrey, black);
+	background: -webkit-linear-gradient(lightgrey, grey, darkgrey, black);background: linear-gradient(lightgrey, grey, darkgrey, black);
 }
 
 
@@ -207,16 +211,16 @@
 	-webkit-filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.3));
 	-ms-filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.3));
 	filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.3));
-	transition-duration: .5s;
-	animation: iconHover 1s ease-in-out;
+	-webkit-transition-duration: .5s;transition-duration: .5s;
+	-webkit-animation: iconHover 1s ease-in-out;animation: iconHover 1s ease-in-out;
 }
 
 .icon:active, .icon:focus, .icon:hover {
-	transform: scale(1.1);
+	-webkit-transform: scale(1.1);-ms-transform: scale(1.1);transform: scale(1.1);
 	-webkit-filter: drop-shadow(20px 20px 15px rgba(0,0,0,0.2));
 	-ms-filter: drop-shadow(20px 20px 15px rgba(0,0,0,0.2));
 	filter: drop-shadow(20px 20px 15px rgba(0,0,0,0.2));
-	transition-duration: .5s;
+	-webkit-transition-duration: .5s;transition-duration: .5s;
 }
 
 /* STYLE ADJUSTMENTS FOR MEDIUM SCREENS */
@@ -292,11 +296,16 @@
 		left: 25%;
 		width: 150px;
 		height: 150px;
-		background: radial-gradient(lemonchiffon, lightgrey);
-		filter: blur(5px);
-		animation: moonSet 4s ease-in-out .5s forwards;
+		background: -webkit-radial-gradient(lemonchiffon, lightgrey);background: radial-gradient(lemonchiffon, lightgrey);
+		-webkit-filter: blur(5px);filter: blur(5px);
+		-webkit-animation: moonSet 4s ease-in-out .5s forwards;animation: moonSet 4s ease-in-out .5s forwards;
 	}
 	
+	@-webkit-keyframes  moonSet {
+		0% {top: -50px;}
+		45% {left: -25px;}
+		100% {top: 1250px; left: -25px; opacity: 0;}
+	}
 	@keyframes  moonSet {
 		0% {top: -50px;}
 		45% {left: -25px;}
@@ -314,9 +323,9 @@
 		border-right: 30px solid transparent;
 		border-bottom: 20px solid lemonchiffon;
 		border-left: 30px solid transparent;
-		filter: blur(2px);
-		-moz-transform: rotate(35deg);
-		animation: starFade 4s ease-in-out .5s forwards;
+		-webkit-filter: blur(2px);filter: blur(2px);
+		-webkit-transform: rotate(35deg);-ms-transform: rotate(35deg);transform: rotate(35deg);
+		-webkit-animation: starFade 4s ease-in-out .5s forwards;animation: starFade 4s ease-in-out .5s forwards;
 	}
 	
 	#star:before { 
@@ -330,8 +339,8 @@
 		border-bottom: 24px solid lemonchiffon;
 		border-left: 10px solid transparent;
 		border-right: 10px solid transparent;
-		filter: blur(2px);
-		-moz-transform: rotate(-35deg);
+		-webkit-filter: blur(2px);filter: blur(2px);
+		-webkit-transform: rotate(-35deg);-ms-transform: rotate(-35deg);transform: rotate(-35deg);
 	}
 		
 	#star:after {
@@ -345,8 +354,8 @@
 		border-right: 30px solid transparent;
 		border-bottom: 20px solid lemonchiffon;
 		border-left: 30px solid transparent;
-		filter: blur(2px);
-		-moz-transform: rotate(-70deg);
+		-webkit-filter: blur(2px);filter: blur(2px);
+		-webkit-transform: rotate(-70deg);-ms-transform: rotate(-70deg);transform: rotate(-70deg);
 	}
 	
 	#star2 { 
@@ -359,9 +368,9 @@
 		border-right: 30px solid transparent;
 		border-bottom: 20px solid lemonchiffon;
 		border-left: 30px solid transparent;
-		filter: blur(2px);
-		-moz-transform: rotate(35deg);
-		animation: starFade 4s ease-in-out .5s forwards;
+		-webkit-filter: blur(2px);filter: blur(2px);
+		-webkit-transform: rotate(35deg);-ms-transform: rotate(35deg);transform: rotate(35deg);
+		-webkit-animation: starFade 4s ease-in-out .5s forwards;animation: starFade 4s ease-in-out .5s forwards;
 	}
 	
 	#star2:before { 
@@ -375,9 +384,9 @@
 		border-bottom: 24px solid lemonchiffon;
 		border-left: 10px solid transparent;
 		border-right: 10px solid transparent;
-		filter: blur(2px);
-		-moz-transform: rotate(-35deg);
-		}
+		-webkit-filter: blur(2px);filter: blur(2px);
+		-webkit-transform: rotate(-35deg);-ms-transform: rotate(-35deg);transform: rotate(-35deg);
+	}
 		
 	#star2:after {
 		content: '';
@@ -390,10 +399,14 @@
 		border-right: 30px solid transparent;
 		border-bottom: 20px solid lemonchiffon;
 		border-left: 30px solid transparent;
-		filter: blur(2px);
-		-moz-transform: rotate(-70deg);
+		-webkit-filter: blur(2px);filter: blur(2px);
+		-webkit-transform: rotate(-70deg);-ms-transform: rotate(-70deg);transform: rotate(-70deg);
 	}
 	
+	@-webkit-keyframes starFade {
+		0% {opacity: 1;}
+		100% {opacity: 0; left: 5%;}
+	}
 	@keyframes starFade {
 		0% {opacity: 1;}
 		100% {opacity: 0; left: 5%;}
@@ -404,17 +417,21 @@
 		right: -100px;
 		width: 250px;
 		height: 250px;
-		background: radial-gradient(yellow, orange);
-		filter: blur(5px);
-		animation: sunRise 4s ease-in-out .5s forwards;
+		background: -webkit-radial-gradient(yellow, orange);background: radial-gradient(yellow, orange);
+		-webkit-filter: blur(5px);filter: blur(5px);
+		-webkit-animation: sunRise 4s ease-in-out .5s forwards;animation: sunRise 4s ease-in-out .5s forwards;
 	}
 
+	@-webkit-keyframes sunRise {
+		0% {top: 1250px;}
+		45% {right: -100px;}
+		100% {top: -150px; right: 25%;}
+	}
 	@keyframes sunRise {
 		0% {top: 1250px;}
 		45% {right: -100px;}
 		100% {top: -150px; right: 25%;}
 	}
-	
 	
 	/* I GOT THE IDEA FOR THIS CLOUD @ http://thecodeplayer.com/walkthrough/make-a-simple-cloud-in-css3 */
 	#cloud {
@@ -425,17 +442,17 @@
 		height: 120px;
 		margin: 120px auto 20px;
 		background: rgba(235,245,255,1);
-		background: linear-gradient(top, rgba(235,240,255,1) 5%, rgba(215,225,240,1));
+		background: -webkit-linear-gradient(top, rgba(235,240,255,1) 5%, rgba(215,225,240,1));background: linear-gradient(top, rgba(235,240,255,1) 5%, rgba(215,225,240,1));
 		border-radius: 100px;
-		filter: blur(2px);
-		animation: cloudScoot 4s ease-in-out .5s forwards;
+		-webkit-filter: blur(2px);filter: blur(2px);
+		-webkit-animation: cloudScoot 4s ease-in-out .5s forwards;animation: cloudScoot 4s ease-in-out .5s forwards;
 	}
 
 	#cloud:after, #cloud:before {
 		content: '';
 		position: absolute;
 		background: rgba(235,245,255,0.9);
-		filter: blur(2px);
+		-webkit-filter: blur(2px);filter: blur(2px);
 	}
 
 	#cloud:after {
@@ -454,6 +471,10 @@
 		border-radius: 300px;
 	}
 	
+	@-webkit-keyframes cloudScoot {
+		0% {left: -600px;}
+		100% {left: 65%; top: -50px;}
+	}
 	@keyframes cloudScoot {
 		0% {left: -600px;}
 		100% {left: 65%; top: -50px;}
@@ -468,17 +489,22 @@
 		height: 25px;
 		background-size: 100% 100%;
 		background-repeat: no-repeat;
-		animation: birdFly 2s ease-in-out 5.25s forwards;
+		-webkit-animation: birdFly 2s ease-in-out 5.25s forwards;animation: birdFly 2s ease-in-out 5.25s forwards;
 	}
 	
+	@-webkit-keyframes birdFly {
+		0% {left: 105%; -webkit-transform: rotate(-5deg); transform: rotate(-5deg)}
+		50% {top: 200px; -webkit-transform: rotate(5deg); transform: rotate(5deg)}
+		100% {left: -10%; top: -5px;}
+	}
 	@keyframes birdFly {
-		0% {left: 105%; transform: rotate(-5deg)}
-		50% {top: 200px; transform: rotate(5deg)}
+		0% {left: 105%; -webkit-transform: rotate(-5deg); transform: rotate(-5deg)}
+		50% {top: 200px; -webkit-transform: rotate(5deg); transform: rotate(5deg)}
 		100% {left: -10%; top: -5px;}
 	}
 	
 	.container {
-		transform: scale(0);
+		-webkit-transform: scale(0);-ms-transform: scale(0);transform: scale(0);
 	}
 	
 	/* CHANGE POSITION AND ANIMATE INDIVIDUAL SECTIONS */
