@@ -1,0 +1,695 @@
+<!doctype html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<title>The Way Unraveled | Code Laboratory and Portfolio</title>
+		<meta name="description" content="Code practice and experimentation with a focus on compassion, inspiration, and the betterment of our future, our world, and all species that don't eat or otherwise threaten humankind.">
+		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/about.css">
+	</head>
+	<body onResize="window.location.href = window.location.href;">
+		<div id="background"></div>
+		<div id="nav" onclick="nav()">
+			<div id="innerNavWrapper">
+				<a href="index.html" id="navHome">HOME</a>
+				<a href="about.html" id="navAbout">ABOUT</a>
+				<a href="contact.html" id="navContact">CONTACT</a>
+				<a href="projects.html" id="navProjects">PROJETS</a>
+			</div>
+		</div>
+		<div id="navTitle"><p>NAV</p></div>
+		<div id="closeNav" onclick="closeNav()"><p>x</p></div>
+		<div id="wrapper" class="center">
+			<div id="welcomeDiv">
+				<br><br>
+				<h2 class="title thin"><a href="index.html">THE WAY UNRAVELED</a></h2>
+				<div id="flowerBox">
+					<div id="petal_8" class="petal"></div>
+					<div id="petal_7" class="petal"></div>
+					<div id="petal_6" class="petal"></div>
+					<div id="petal_5" class="petal"></div>
+					<div id="petal_4" class="petal"></div>
+					<div id="petal_3" class="petal"></div>
+					<div id="petal_2" class="petal"></div>
+					<div id="petal_1" class="petal"></div>
+					<div id="flowerBulb">
+						<p>&#9775;</p>
+					</div>
+				</div>
+				<h2 class="title thin">ABOUT</h2>
+			</div>
+			<div id="aboutSection1" class="aboutSection">
+				<div class="clicker" onclick="aboutSite()">
+					<img src="img/yinYangApartNew.png" id="twu">
+					<h3 class="title thin">About the Site</h3>
+				</div>
+				<div id="aTitle" class="aboutSubsection">
+					<div class="clicker" onclick="aTitle()">
+						<div id="aTitleIcon" class="aboutSubsectionIcon"></div>
+						<h4 id="titleTitle"class="title thin">TITLE</h4>
+					</div>
+					<div class="darkGrey">
+						<p>The title of this site is what the books might call a triple-entendre</p>
+						<p>Which is just a fancy way of saying that it has three different meanings</p>
+						<p>It could mean a revealing of some important or secret thing</p>
+						<p>It could refer to what happens when you lose your way</p>
+						<p>Or it could be describing those things that are out there on the edgy fringes</p>
+						<p>Conveniently, each of these meanings nicely conveys what this site should be all about:</p>
+						<p>A revealing of the important things</p>
+						<p>A place of comfort for those who have lost their way</p>
+						<p>And a fun exploration of those things that are way unraveled</p>
+					</div>
+					<p>&#9775;</p>
+					<button class="closeBtn" onclick="closeTitle()">close</button>
+				</div>
+				<div id="aObjective_1" class="aboutSubsection">
+					<div class="clicker" onclick="aObjective_1()">
+						<div id="aObjective_1Icon" class="aboutSubsectionIcon"></div>
+						<h4 id="lowerTitle" class="title thin">OBJECTIVE</h4>
+					</div>
+					<div id="triangle1" class="triangle"></div>
+					<div id="triangle2" class="triangle"></div>
+					<p><span class='stationaryText'>What I build here is meant to </span><span id="objText1" class='transitioningText'></span></p>
+					<br><br>
+					<button class="closeBtn" onclick="closeObjective_1()">close</button>
+				</div>
+				<div id="aMotivation" class="aboutSubsection">
+					<div class="clicker" onclick="aMotivation()">
+						<div id="aMotivationIcon" class="aboutSubsectionIcon"></div>	
+						<h4 class="title thin">MOTIVATION</h4>
+					</div>
+					<div class="darkGrey">
+						<p>I want to reupholster your mind...</p>
+						<p>Yes, of course, I want to write elegant code and create powerful projects that pay the bills and stir the masses.</p>
+						<p>But mostly, and behind everything else, there is the urge to find a way to help the people enjoy the ride a little more.</p>
+						<p>I can't make you rich.  I can't cure your ills.</p>
+						<p>But maybe, and hopefully, with my work, I can find ways to remind you that life is<br>too short for unnecessary anger, too wonderful for cruelty, too mind-boggling for boredom<br>and too damn amazing to waste on anything bad.</p>
+						<p>And if you can't see that,<br>maybe it's time to try reupholstering your mind so it gives you a more comfortable ride.</p>
+						<p>Think about it.</p>
+					</div>
+					<p>&#9775;</p>
+					<br>
+					<button class="closeBtn" onclick="closeMotivation()">close</button>
+				</div>
+				<div id="aTech" class="aboutSubsection">
+					<div class="clicker" onclick="aTech()">
+						<div id="aTechIcon" class="aboutSubsectionIcon"></div>
+						<h4 class="title thin">DETAILS &amp; TECH STUFF</h4>
+					</div>
+					<br>
+					<div id="techTalk" class="">
+						<div id="cubeSide1" class="cubeSide">
+							<p>This site was built utilizing the responsive and mobile first design philosophies, with consideration for legacy and cross-browser support, and an emphasis on writing clean, elegant, and DRY code.</p>
+							<br>
+						</div>
+						<div id="cubeSide2" class="cubeSide">
+							<p>This site was created from scratch in Notepad++ with HTML5, CSS3, and plain old vanilla JavaScript.  Anything not my own is attributed in the <b>Usage Rights and Attribution</b> section.</p>
+							<br>
+						</div>
+						<div id="cubeSide3" class="cubeSide">
+							<p>The visual art on this site is my own creation.  Some CSS effects were inspired by code that was attributed in the code comments.  Non CSS art made primarily in Adobe Illustrator. Product icons were inspired by w3 and native logo designs.</p>
+							<br>
+						</div>
+					</div>
+					<!-- <br> -->
+					<button class="closeBtn" onclick="closeTech()">close</button>
+				</div>
+				<div id="aUra" class="aboutSubsection">
+					<div class="clicker" onclick="aUra()">
+						<div id="aUraIcon" class="aboutSubsectionIcon"></div>
+						<h4 class="title thin">USAGE RIGHTS &amp; ATTRIBUTION</h4>
+					</div>
+					<div class="darkGrey">
+						<p>Let's keep it nice and simple</p>
+						<p>You don't rip me off, and I won't rip you off.</p>
+						<p>Any material not my own has been attributed below to it's rightful owner, creator, provider, etc.</p>
+						<p>All backgrounds, icons, and non-photo images on this site were created by me, Robert PM, using <a href="http://adobe/illustrator.com" target="_blank">Adobe Illustrator and Photoshop</a>.</p>
+						<p>All written material is my original work, except in the place of quotes, which are attributed to their rightful owner if possible.</p>
+						<p>If any of my original intellectual property is reused or redistributed in any way, my permission should be requested, and I would like that work to be attributed to me, Robert PM, as well as be accompanied by a link to my site, <a href="http://index.html">thewayunraveled.com</a>.  Let nothing of mine be used for any harmful purpose and not in any way that suggests my support.  And if any of my original intellectual property is used in any profitable way, I expect a reasonable cut.</p>
+						<p>For the record, I despise this kind of proprietorial and prosecutorial type stuff, but we all have an obligation to protect ourselves.  And unfortunately, until people stop ripping each other off or being otherwise despicable, we will all have a need to protect ourselves in such lame ways.  Cheers.</p>
+						<p>Special thanks to the greater WWW community, most notably,<br><a href="http://teamtreehouse.com" target="_blank">Treehouse</a> | <a href="https://www.udacity.com/" target="_blank">Udacity</a> | <a href="http://www.codecademy.com" target="_blank">Codecademy</a> | <a href="http://css-tricks.com" target="_blank">CSS TRICKS</a> | <a href="https://developer.mozilla.org" target="_blank">Mozilla Developer Network&lpar;MDN&rpar;</a> | <a href="http://www.w3schools.com/" target="_blank">w3schools</a> | <a href="http://stackoverflow.com" target="_blank">Stack Overflow</a> | <a href="https://www.google.com/?gws_rd=ssl" target="_blank">Google</a>.</p>
+						<p>I used <a href="http://leaverou.github.io/prefixfree/" target="_blank">-prefix-free</a> by <a href="http://lea.verou.me/" target="_blank">Lea Verou</a> on the main external script file to avoid as many vendor prefixes as possible.</p>
+						<p>Audio files from <a href="http://naturesoundsfor.me" target="_blank">naturesoundsfor.me</a> via <a href="http://freesound.org" target="_blank">freesound.org</a></p>
+					</div>
+					<br>
+					<button class="closeBtn" onclick="closeUra()">close</button>
+				</div>
+				<div id="aYy" class="aboutSubsection">
+					<div class="clicker" onclick="aYy()">
+						<div id="aYyIcon" class="aboutSubsectionIcon"></div>
+						<h4 class="title thin">WHAT'S WITH ALL THE YIN YANGS</h4>
+					</div>
+					<div id="yySpeech" class="darkGrey">
+						<p>Yeah, I get it.  There's a lot of them, right?</p>
+						<p>Why so many?</p>
+						<p>Well, firstly and mainly, I just really enjoy the image.  Besides being aesthetically pleasing, in my opinion the yin yang captures the very essence of reality better than any other symbol.  It perfectly conveys the interaction and intermingling of polar opposites, the dance through which all movement in the universe is made possible, and in the center of which, it appears balance and harmony may be achieved.  How cool is that?</p>
+						<p>Secondly, apart from being totally awesome, the yin yang is public domain, and therefore equally accessible by all.</p><br><br>
+					</div>
+					<p>&#9775;</p>
+					<br>
+					<button class="closeBtn" onclick="closeYy()">close</button>
+				</div>
+				<br>
+				<button class="closeBtn" onclick="closeSection1()">close</button>
+			</div>
+			<!-- <div id="aboutSection3" class="aboutSection"></div> -->
+			<div id="aboutSection2" class="aboutSection">
+				<div class="clicker" onclick="aboutAuthor()">
+					<img src="img/me.jpg" id="me">
+					<h3 class="title thin">About the Author</h3>
+				</div>
+				<div id="myInfo_0">
+					<div id="myInfo_1" class="myInfo">
+						<h3 class="thin mi">Robert Manolis</h3>
+						<h6 class="thin">Milwaukie, OR</h6>
+						<h6 class="thin">robertpm@thewayunraveled.com</h6>
+					</div>
+					<div id="myInfo_2" class="myInfo">
+						<h4 class="thin mi">Web Designer/Developer</h4>
+						<h4 class="thin mi">Freelance Writer</h4>
+					</div>
+				</div>
+				<div id="aSummary" class="aboutSubsection">
+					<div class="clicker" onclick="aSummary()">
+						<div id="aSummaryIcon" class="aboutSubsectionIcon"></div>
+						<h4 class="title thin">SUMMARY</h4>
+					</div>
+					<br>
+					<div class="darkGrey">
+						<p>Above all, I want to be a force for good. I'm all about making things better, safer, and more enjoyable. To do this, I am happily striving to make positive and beneficial contributions. It was this mentality that led me to be a stay-at-home-dad. During my time in this role, aside from my domestic duties, I have worked freelance on the weekends while aggressively studying front-end web development(HTML, CSS, JavaScript, Responsive Web Design, Github, Adobe Illustrator, etc).</p>
+						<p>Now that my kids are getting older, I have an opportunity to really get back out there into the working world, and I'm excited for that opportunity. I want to make the best of it. </p>
+						<p>I'm looking for a position in the field of web design and development where I will have the chance to learn and grow and contribute to a team. Partially remote would be best.</p>
+						<p>So, If you're looking for a bright Junior Web Designer/Developer with a positive attitude, practiced problem solving skills, a solid foundation in the relevant technologies, and a strong desire to learn and excel, then look no further.</p>
+					</div>
+					<br>
+					<button class="closeBtn" onclick="closeSummary()">close</button>
+				</div>
+				<div id="aExperience" class="aboutSubsection">
+					<div class="clicker" onclick="aExperience()">
+						<div id="aExperienceIcon" class="aboutSubsectionIcon"></div>
+						<h4 id="expTitle"class="title thin">EXPERIENCE &amp; EDUCATION</h4>
+					</div>
+					<div class="expWrapper">
+						<div id="expInfo" class="eAeSection">
+							<div class="ribbon round">
+								<h3 class="thin">EXPERIENCE</h3>
+								<br>
+								<div id="employment" class="expSection darkGrey">
+									<h4 class="thin title">EMPLOYMENT</h4>
+									<br>
+									<!-- <div id="emp0" class="emp">
+										<div id="emp0h0" class="eh">
+											<p id="empTitle0" class="empTitle">Stay-at-home-dad</p>
+											<p id="empName0" class="empName">For now I work for my kids</p>
+										</div>
+										<div id="emp0h1" class="eh">
+											<p id="empLoc0" class="empLoc">Milwaukie, OR</p>
+											<p id="empDate0" class="empDate">2007 - present</p>
+										</div>
+										<br>
+										<div id="emp0h2" class="eh">
+											<p id="empDes0" class="empDes">After my son was diagnosed with Autism, circumstances led me into the role of Stay-at-home-dad for him and my two daughters. Now that my kids are about to be in school full-time, and my son is doing better as he is getting older, it's time for me to get back out there in the working world.   In the meantime, while I see to the raising and rearing of my children, I maintain the household and finances.  I study web languages and technologies, as well as the arts, the sciences, philosophy, theology, and history.  And from time to time I am able to pick up small construction or landscaping or freelance writing jobs.</p>
+										</div>
+									</div>
+									<hr>
+									<br> -->
+									<div id="emp1" class="emp">
+										<div id="emp1h0" class="eh">
+											<p id="empTitle1" class="empTitle">Freelance Writer</p>
+											<p id="empName1" class="empName">Self-Employed</p>
+										</div>
+										<div id="emp1h1" class="eh">
+											<p id="empLoc1" class="empLoc">Milwaukie, OR</p>
+											<p id="empDate1" class="empDate">2014 - present</p>
+										</div>
+										<br>
+										<div id="emp1h2" class="eh">
+											<p id="empDes1" class="empDes">I've been writing for all of my adult life and then some, but in 2014, I actually began doing it professionally. It's only part time, but writing entertainment reviews, miscellaneous blog posts, and SEO content helps keep my creative fires burning.</p>
+										</div>
+									</div>
+									<hr>
+									<br>
+									<div id="emp2" class="emp">
+										<div id="emp2h0" class="eh">
+											<p id="empTitle2" class="empTitle">Sub-contractor/Assistant foreman</p>
+											<p id="empName2" class="empName">Re-Do-It Remodelling, LLC</p>
+										</div>
+										<div id="emp2h1" class="eh">
+											<p id="empLoc2" class="empLoc">Northern Willamette Valley</p>
+											<p id="empDate2" class="empDate">1995 - present</p>
+										</div>
+										<br>
+										<div id="emp2h2" class="eh">
+											<p id="empDes2" class="empDes">During my time with Re-Do-It Remodeling, I have performed all aspects of residential remodeling and construction.  At present, this work is very part time and seasonal, mainly occasional weekend work due to my being needed at home, but when I was full-time, I met with customers, gave bids, and occasionally supervised a small crew when the boss was away.</p>
+										</div>
+									</div>
+									<hr>
+									<br>
+									<div id="emp3" class="emp">
+										<div id="emp3h0" class="eh">
+											<p id="empTitle3" class="empTitle">Sales and Leasing Consultant</p>
+											<p id="empName3" class="empName">Ron Tonkin Honda</p>
+										</div>
+										<div id="emp3h1" class="eh">
+											<p id="empLoc3" class="empLoc">Portland, OR</p>
+											<p id="empDate3" class="empDate">2006 - 2007</p>
+										</div>
+										<br>
+										<div id="emp3h2" class="eh">
+											<p id="empDes3" class="empDes">As a sales and leasing consultant, I had to set, manage, and achieve sales goals, research product information, and manage my list of clients.</p>
+										</div>
+									</div>
+									<hr>
+									<br>
+									<div id="emp4" class="emp">
+										<div id="emp4h0" class="eh">
+											<p id="empTitle4" class="empTitle">Pub Server</p>
+											<p id="empName4" class="empName">McMenamins Edgefield's Power Station Pub</p>
+										</div>
+										<div id="emp4h1" class="eh">
+											<p id="empLoc4" class="empLoc">Troutdale, OR</p>
+											<p id="empDate4" class="empDate">2002 - 2004</p>
+										</div>
+										<br>
+										<div id="emp4h2" class="eh">
+											<p id="empDes4" class="empDes">At the Pub, I greeted guests and showed them to their tables.  For a five table section, I took food and beverage orders, placed those orders with the bar and the kitchen, then delivered those orders in a timely fashion amidst one of the fastest paced work environments.  This required strong multi-tasking skills and smart time management.</p>
+										</div>
+									</div>
+								</div>
+								<hr>
+								<br>
+								<div id="projects" class="expSection darkGrey">
+									<h4 class="thin title">PROJECTS</h4>
+									<br>
+									<div id="proj0" class="proj">
+										<div id="proj0Det0" class="projDet">
+											<p id="projName0" class="projName">Galactic Odometer</p>
+											<div id="projImg0" class="projImg">
+												<!-- <img src="img/pageSamples/odom.jpg"> -->
+											</div>
+										</div>
+										<div id="proj0Det1" class="projDet">
+											<p id="projDes0" class="projDes">The Galactic Odometer takes your date of birth as an input and outputs a running count of the space miles you've traveled in your lifetime.</p>
+										</div>
+									</div>
+									<hr>
+									<br>
+									<div id="proj1" class="proj">
+										<div id="proj1Det0" class="projDet">
+											<p id="projName1" class="projName">The Decid-o-matic 5000</p>
+											<div id="projImg1" class="projImg">
+												<!-- <img src="img/pageSamples/decider.jpg"> -->
+											</div>
+										</div>
+										<div id="proj1Det1" class="projDet">
+											<p id="projDes1" class="projDes">The Decid-o-matic 5000 still needs some tweaking to rightly do what it was meant to do, and to be a little more user-friendly, but it was a blast to make, and even this rough-draft version is still pretty cool. Version 5001 is in production. This project really solidified the core concepts of JavaScript for me and helped me take my skills to the next level.</p>
+										</div>
+									</div>
+									<hr>
+									<br>
+									<div id="proj2" class="proj">
+										<div id="proj2Det0" class="projDet">
+											<p id="projName2" class="projName">Background Play</p>
+											<div id="projImg2" class="projImg">
+												<!-- <img src="img/pageSamples/singleGradientOrb.jpg"> -->
+											</div>
+											<div id="projImg3" class="projImg">
+												<!-- <img src="img/pageSamples/multipleGradientOrbs.jpg"> -->
+											</div>
+											<div id="projImg4" class="projImg">
+												<!-- <img src="img/pageSamples/layeredGradients.jpg"> -->
+											</div>
+											<div id="projImg5" class="projImg">
+												<!-- <img src="img/pageSamples/autumnBlocks.jpg"> -->
+											</div>
+											<div id="projImg6" class="projImg">
+												<!-- <img src="img/pageSamples/blueLightSaber.jpg"> -->
+											</div>
+											<div id="projImg7" class="projImg">
+												<!-- <img src="img/pageSamples/greenSnake.jpg"> -->
+											</div>
+										</div>
+										<div id="proj2Det1" class="projDet">
+											<p id="projDes2" class="projDes">One short attempt at playing with the possibility of animation gradients with JavaScript.  Plus a couple failed attempts that generated results interesting enough to include here.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<br>
+					<div class="expWraper">
+						<div id="eduInfo" class="eAeSection">
+							<div class="ribbon round">
+								<h3 class="thin">EDUCATION</h3>
+								<br>
+								<div id="schools" class="eduSection darkGrey">
+									<h4 class="thin title">SCHOOLS</h4>
+									<br>
+									<div id="school0" class="school">
+										<p id="schName0" class="schName">Washington High School</p>
+										<p id="schMajDeg0" class="schMajDeg"></p>
+										<p id="schLoc0" class="schLoc">Fremont, CA</p>
+										<p id="schDate0" class="schDate">1991 - 1993</p>
+									</div>
+									<br>
+									<div id="school1" class="school">
+										<p id="schName1" class="schName">Centennial High School</p>
+										<p id="schMajDeg1" class="schMajDeg"></p>
+										<p id="schLoc1" class="schLoc">Portland, OR</p>
+										<p id="schDate1" class="schDate">1993 - 1994</p>
+									</div>
+									<br>
+									<div id="school2" class="school">
+										<p id="schName2" class="schName">Mt. Hood Community College</p>
+										<p id="schMajDeg2" class="schMajDeg"></p>
+										<p id="schLoc2" class="schLoc">Gresham, OR</p>
+										<p id="schDate2" class="schDate">2001</p>
+									</div>
+								</div>
+								<br>
+								<hr>
+								<br>
+								<div id="online" class="eduSection darkGrey">
+									<h4 class="thin title">ONLINE COURSES</h4>
+									<br>
+									<div id="ol0" class="ol">
+										<p id="olName0" class="olName">Team Treehouse</p>
+										<p id="olDate0" class="olDate">2014 - present</p>
+										<div id="olcourses0" class="olcourses">
+											<ul>
+												<li>Front End web Developement</li>
+												<li>Web Design</li>
+												<li>PHP Development</li>
+											</ul>
+										</div>
+									</div>
+									<br>
+									<div id="ol1" class="ol">
+										<p id="olName1" class="olName">Codecademy</p>
+										<p id="olDate1" class="olDate">2014 - present</p>
+										<div id="olcourses0" class="olcourses">
+											<ul>
+												<li>Make a Website</li>
+												<li>JavaScript</li>
+											</ul>
+										</div>
+									</div>
+									<br>
+									<div id="ol2" class="ol">
+										<p id="olName2" class="olName">Udacity</p>
+										<p id="olDate2" class="olDate">2015 - present</p>
+										<div id="olcourses0" class="olcourses">
+											<ul>
+												<li>JavaScript Basics</li>
+												<li>Object Oriented JavaScript</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<br>
+					<button id="expBtn"class="closeBtn" onclick="closeExperience()">close</button>
+				</div>
+				<div id="aContact" class="aboutSubsection">
+					<div class="clicker" onclick="window.location = 'contact.html';">
+						<div id="aContactIcon" class="aboutSubsectionIcon"></div>
+						<h4 class="title thin">CONTACT</h4>
+					</div>
+					<br>
+				</div>
+				<div id="aSkills" class="aboutSubsection">
+					<div class="clicker" onclick="aSkills()">
+						<div id="aSkillsIcon" class="aboutSubsectionIcon"></div>
+						<h4 id="skillsTitle" class="title thin">SKILLS &amp; INTERESTS</h4>
+					</div>
+					<br>
+					<div id="skills">
+						<div id="skillsKey">
+							<h4 id="skillCategory" class="thin">SKILL</h4>
+							<h4 id="skillGauge" class="thin">0 - LEVEL - 10</h4>
+						</div>
+						<div id="skill0" class="skill">
+							<div id="skillInfo0" class="skillInfo">
+								<div id="skillLogo0" class="skillLogo"></div>
+								<p id="skillName0" class="skillName">HTML</p>
+							</div>
+							<div id="skillLev0" class="skillLev">
+								<div id="skillLevDis0" class="skillLevDis">
+									<p id="skillNum0" class="skillNum">8</p>
+								</div>
+							</div>
+						</div>
+						<div id="skill1" class="skill">
+							<div id="skillInfo1" class="skillInfo">
+								<div id="skillLogo1" class="skillLogo"></div>
+								<p id="skillName1" class="skillName">CSS</p>
+							</div>
+							<div id="skillLev1" class="skillLev">
+								<div id="skillLevDis1" class="skillLevDis">
+									<p id="skillNum1" class="skillNum">8</p>
+								</div>
+							</div>
+						</div>
+						<div id="skill2" class="skill">
+							<div id="skillInfo2" class="skillInfo">
+								<div id="skillLogo2" class="skillLogo"></div>
+								<p id="skillName2" class="skillName">JavaScript</p>
+							</div>
+							<div id="skillLev2" class="skillLev">
+								<div id="skillLevDis2" class="skillLevDis">
+									<p id="skillNum2" class="skillNum">6</p>
+								</div>
+							</div>
+						</div>
+						<div id="skill3" class="skill">
+							<div id="skillInfo3" class="skillInfo">
+								<div id="skillLogo3" class="skillLogo"></div>
+								<p id="skillName3" class="skillName">Illustrator</p>
+							</div>
+							<div id="skillLev3" class="skillLev">
+								<div id="skillLevDis3" class="skillLevDis">
+									<p id="skillNum3" class="skillNum">7</p>
+								</div>
+							</div>
+						</div>
+						<div id="skill4" class="skill">
+							<div id="skillInfo4" class="skillInfo">
+								<div id="skillLogo4" class="skillLogo"></div>
+								<p id="skillName4" class="skillName">Photshop</p>
+							</div>
+							<div id="skillLev4" class="skillLev">
+								<div id="skillLevDis4" class="skillLevDis">
+									<p id="skillNum4" class="skillNum">5</p>
+								</div>
+							</div>
+						</div>
+						<div id="skill5" class="skill">
+							<div id="skillInfo5" class="skillInfo">
+								<div id="skillLogo5" class="skillLogo"></div>
+								<p id="skillName5" class="skillName">Github</p>
+							</div>
+							<div id="skillLev5" class="skillLev">
+								<div id="skillLevDis5" class="skillLevDis">
+									<p id="skillNum5" class="skillNum">4</p>
+								</div>
+							</div>
+						</div>
+						<div id="skill6" class="skill">
+							<div id="skillInfo6" class="skillInfo">
+								<div id="skillLogo6" class="skillLogo"></div>
+								<p id="skillName6" class="skillName">jQuery</p>
+							</div>
+							<div id="skillLev6" class="skillLev">
+								<div id="skillLevDis6" class="skillLevDis">
+									<p id="skillNum6" class="skillNum">3</p>
+								</div>
+							</div>
+						</div>
+						<div id="skill7" class="skill">
+							<div id="skillInfo7" class="skillInfo">
+								<div id="skillLogo7" class="skillLogo"></div>
+								<p id="skillName7" class="skillName">AJAX</p>
+							</div>
+							<div id="skillLev7" class="skillLev">
+								<div id="skillLevDis7" class="skillLevDis">
+									<p id="skillNum7" class="skillNum">3</p>
+								</div>
+							</div>
+						</div>
+						<div id="skill8" class="skill">
+							<div id="skillInfo8" class="skillInfo">
+								<div id="skillLogo8" class="skillLogo"></div>
+								<p id="skillName8" class="skillName">Node</p>
+							</div>
+							<div id="skillLev8" class="skillLev">
+								<div id="skillLevDis8" class="skillLevDis">
+									<p id="skillNum8" class="skillNum">3</p>
+								</div>
+							</div>
+						</div>
+						<div id="skill9" class="skill">
+							<div id="skillInfo9" class="skillInfo">
+								<div id="skillLogo9" class="skillLogo"></div>
+								<p id="skillName9" class="skillName">Angular</p>
+							</div>
+							<div id="skillLev9" class="skillLev">
+								<div id="skillLevDis9" class="skillLevDis">
+									<p id="skillNum9" class="skillNum">2</p>
+								</div>
+							</div>
+						</div>
+						<div id="skill10" class="skill">
+							<div id="skillInfo10" class="skillInfo">
+								<div id="skillLogo10" class="skillLogo"></div>
+								<p id="skillName10" class="skillName">PHP</p>
+							</div>
+							<div id="skillLev10" class="skillLev">
+								<div id="skillLevDis10" class="skillLevDis">
+									<p id="skillNum10" class="skillNum">2</p>
+								</div>
+							</div>
+						</div>
+						<div id="skill11" class="skill">
+							<div id="skillInfo11" class="skillInfo">
+								<div id="skillLogo11" class="skillLogo"></div>
+								<p id="skillName11" class="skillName">MySQL</p>
+							</div>
+							<div id="skillLev11" class="skillLev">
+								<div id="skillLevDis11" class="skillLevDis">
+									<p id="skillNum11" class="skillNum">2</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<br>
+					<div id="interests">
+						<!-- <h3 class="title thin darkgrey">INTERESTS</h3> -->
+						<p class="skillHeading">When I'm not writing code, I like to...</p>
+						
+						<div id="study" class="iCat">
+							<h1 class="title">STUDY</h1>
+							<P>Web and computer technologies</P>
+							<p>People and Human behavior</p>
+							<p>Philosophy and theology</p>
+							<p>Language and literature</p>
+							<p>Science and the arts</p>
+						</div>	
+						<br>
+						
+						<div id="study" class="iCat">
+							<h1 class="title">PLAY</h1>
+							<p>With my kids and the rest of my family</p>
+							<p>My guitar</p>
+							<p>Games that keep my mind sharp</p>
+							<p>At the river</p>
+						</div>	
+						<br>
+						
+						<div id="read" class="iCat">
+							<h1 class="title">READ</h1>
+							<h3>THE CLASSICS</h3>
+							<p>Hemingway, Fitzgerald, Salinger, etc.</p>
+							<h3>POETRY</h3>
+							<p>Whitman, Frost, Poe, Shakespeare</p>
+							<h3>AND</h3>
+							<p>Anything by Stephen King or Hunter S.Thompson</p>
+							<p>Any non-fiction about human history, human behavior, philosophy, art, and science</p>
+						</div>						
+						<br>
+						
+						<div id="read" class="iCat">
+							<h1 class="title">WORK</h1>
+							<p>On web projects</p>
+							<p>On my education</p>
+							<p>Around my house</p>
+							<p>In my yard</p>
+						</div>						
+						<br>
+							
+					</div>
+					<br>
+					<div id="strengths">
+						<!-- <h3 class="title thin darkgrey">STRENGTHS</h3> -->
+						<p class="skillHeading">Strengths worth mentioning</p>
+						<div class="iCat">
+							<ul>
+								<li>Loyalty</li>
+								<li>Team player attitude</li>
+								<li>Learn quickly</li>
+								<li>Strong memory</li>
+								<li>Positive attitude</li>
+								<li>Love for life</li>
+								<li>Appreciation for others</li>
+								<li>Creative problem solving</li>
+								<li>Strong communication skills</li>
+								<li>I admit and learn from my mistakes</li>
+								<li>And I never hold a grudge</li>
+							</ul>
+						</div>
+					</div>
+					<br>
+					<button id="skillBtn" class="closeBtn" onclick="closeSkills()">close</button>
+				</div>
+				<div id="aProjects" class="aboutSubsection">
+					<div class="clicker" onclick="window.location = 'projects.html';">
+						<div id="aProjectsIcon" class="aboutSubsectionIcon"></div>
+						<h4 class="title thin">PROJECTS</h4>
+					</div>
+				</div>
+				<div id="aBio" class="aboutSubsection">
+					<div class="clicker" onclick="aBio()">
+						<div id="aBioIcon" class="aboutSubsectionIcon"></div>
+						<h4 class="title thin">BRIEF BIOGRAPHY</h4>
+						<br>
+						<div class="darkGrey">
+							<p>Though I am confident that I am capable of great things, I remain one of the faceless masses, just another nobody, a happy member of the blessed proletariat.</p>
+							<p>If I had come from some other or better place or situation, perhaps my story would be different.  But my path has lead me here, and I am glad for it.  I've never seen a lot of value in wasting time with regret.</p>
+							<p>In the beginning, there was a bad amount of fear and uncertainty.  There were good times too, but they were often ruined by angry parental disputes or poverty.</p>
+							<p>This led to an unstructured, unreliable life, fourteen different schools, a GED, and a pinch of community college.  But I've studied and learned so much more than you'd think for someone with an educational history of this nature.</p>
+							<p>Following was a rocky attempt to find my niche, which led to several jobs spanning nearly three decades and an interesting variety of industries.</p>
+							<p>Till recently, this long search has failed to reveal just what I was meant to do.  None the less, the journey has borne a cornucopia of fruit, and taught me much about life.</p>
+							<p>I've lived in three different states, more than a dozen cities, and too many residences to recall, ranging from your up&dash;scale Cali' suburban two&dash;story with the classic kidney-shaped pool, to apartments, 'plexes, motels, rooms for rent, a boat, and even the front seat of some old Honda.</p>
+							<p>I've met hundreds of acquaintances and have had dozens of close personal relationships with all sorts and types, and I've studied each one to a fine detail.</p>
+							<p>I've crossed lines, tested limits, challenged authority, questioned everything, and through it all, I have closely inspected the textural dimensions of the mind, reality, and the human experience.</p>
+							<p>I've been down and out, beaten up, broken hearted, at death's door, in and out of trouble, addicted, written off, and subjected to monumental amounts of suffering, but I rose from those ashes to take a stand, to try to do the right thing, to try to be a good spouse, and a good father to three wonderful, pain&dash;in&dash;the&dash;ass kids, who disrupt the days, enrich our lives, and are growing up way too fast.</p>
+							<p>And through all that, I have read, and researched, and studied the theories and the concepts.  As of the summer of 2014, I have been aggressively learning web development and design.  These new skills are combining with all I have learned about life to reveal a purpose that might extend beyond being a stay-at-home-father.  During my time here, I have learned a lot, some of which may be of tremendous help to those in need, and in that light, I'm trying to create as much I can, here, for you, before my fuse burns up for good.</p>
+							<p>Here's to making it better for everyone, not just for ourselves.</p>
+						</div>
+					</div>
+					<p>&#9775;</p>
+					<!-- <br> -->
+					<button id="bioBtn" class="closeBtn" onclick="closeBio()">close</button>
+				</div>
+				<p id="thanks">Thanks for checking me out</p>
+				<br>
+				<button class="closeBtn" onclick="closeSection2()">close</button>
+			</div>
+		</div>
+		<footer>
+			<p class="center">Thanks for visiting!</p>
+			<ul>
+				<li><a href="index.html" id="homeLink">home</a></li>
+				<li><a href="about.html" id="aboutLink" class="selected">about</a></li>
+				<li><a href="contact.html" id="contactLink">contact</a></li>
+				<li><a href="projects.html" id="projectsLink">projects</a></li>
+				<!-- <li><a href="index.html#missionStatementDiv" id="missionStatementLink">mission statement</a></li> -->
+				<!-- <li><a href="aur.html" id="aurLink">attribution and usage rights</a></li> -->
+			</ul>
+			<ul>
+				<li><a href="https://www.linkedin.com/pub/robert-manolis/b1/40a/34a" target="_blank" id="linkedin">linkedin</a></li>
+				<li><a href="https://github.com/gitrobertpm" target="_blank" id="github">github</a></li>
+				<li><a href="http://codepen.io/robertpm/" target="_blank" id="codepen">codepen</a></li>
+				<li><a href="https://www.behance.net/robertpm" target="_blank" id="behance">behance</a></li>
+				<li><a href="http://teamtreehouse.com/robertmanolis" target="_blank" id="treehouse">treehouse</a></li>
+			</ul>
+			<p class="center">&copy; Robert PM 2015 &copy;</p>
+		</footer>
+		<script src="js/main.js"></script>
+		<script src="js/about.js"></script>
+	</body>
+</html>

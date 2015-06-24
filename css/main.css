@@ -1,0 +1,300 @@
+/* MAIN CSS */
+
+*, *:before, *:after {
+	/* UNIVERSAL BOX-SIZING - SET WIDTH TO INCLUDE PADDING AND BORDER */
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Century Gothic, sans-serif;
+	font-size: 1em;
+	position: relative;
+}
+
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+footer {
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:active, a:focus, a:hover {
+	color: dodgerblue;
+}
+
+button {
+	color: lightgrey;
+	margin: 10px;
+	padding: 5px 10px 7.5px;
+	border-radius: 5px;
+	background: linear-gradient(lightblue, dodgerblue, blue, navy);
+}
+
+button:disabled {
+	color: black;
+	background: linear-gradient(lightgrey, grey, darkgrey, black);
+}
+
+/* QUICKSTYLE CHANGE CLASSES */
+.clicker {
+	cursor: pointer;
+}
+
+.selected {
+	font-size: 1.1em;
+	color: dodgerblue;
+}
+
+.title {
+	/* PAD AND COLOR TITLES */
+	margin: 5px auto;
+	padding-top: 5px;
+	padding-bottom: 7.5px;
+	background: linear-gradient(to right, transparent, transparent, rgba(200,200,200,0.5), transparent, transparent);
+}
+
+.thin {
+	/* LIGHTEN BOLD TEXT */
+	font-weight: 100;
+}
+
+.white {
+	/* TURNS TEXT WHITE */
+	color: white;
+}
+
+.darkGrey {
+	/* TURNS TEXT DARKGREY */
+	color: rgba(75,75,75,1);
+}
+
+.center {
+	/* CENTER TEXT */
+	text-align: center;
+}
+
+.smallerText {
+	/* CLASS FOR SPANS THAT NEED SMALLER TEXT */
+	font-size: 10px;
+}
+
+#nav {
+	position: fixed;
+	top: 5px;
+	left: 5px;
+	width: 35px;
+	height: 40px;
+	background: rgba(255,255,255,0.8);
+	border-radius: 15px 15px 0 0;
+	border-bottom: 1px solid black;
+	transition-duration: 1s;
+	cursor: pointer;
+	z-index: 9999;
+}
+
+#innerNavWrapper {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: left;
+	background-size: 35px 40px;
+	border-radius: 15px 15px 0 0;
+	transition-duration: 1s;
+	z-index: 9999999;
+}
+
+#innerNavWrapper a {
+	text-align: center;
+	font-size: .9em;
+	color: rgb(100,100,100);
+	position: absolute;
+	top: 10px;
+	left: 500px;
+	width: 85px;
+	background: linear-gradient(to right, rgba(255,255,255,0.9), transparent);
+	border-radius: 10px;
+	transform: rotate(-25deg);
+}
+
+#innerNavWrapper a:active, #innerNavWrapper a:focus, #innerNavWrapper a:hover {
+	color: rgb(200,200,200);
+	text-shadow: 1px 1px 0px rgb(75,75,75);
+	transition-duration: .25s;
+}
+
+#navHome {
+	margin-left: -110px;
+	transition-duration: .5s;
+}
+
+#navAbout {
+	margin-left: -65px;
+	transition-duration: .75s;
+}
+
+#navContact {
+	margin-left: -15px;
+	transition-duration: 1s;
+}
+
+#navProjects {
+	margin-left: 40px;
+	transition-duration: 1.25s;
+}
+
+#closeNav {
+	position: fixed;
+	top: 10px;
+	right: 1.5%;
+	width: 20px;
+	height: 20px;
+	background: red;
+	border-top: 1px solid pink;
+	border-left: 1px solid pink;
+	border-bottom: 3px solid darkred;
+	border-right: 2px solid darkred;
+	transition-duration: 1.5s;
+	opacity: 0;
+	z-index: 9999;
+}
+
+/* POSITION X IN NAV CLOSE TAB AND CHANGE CURSOR*/
+#closeNav p {
+	font-weight: bold;
+	color: rgb(50,50,50);
+	margin-top: -2.5px;
+	margin-left: 5px;
+	cursor: pointer;
+}
+
+#navTitle {
+	position: fixed;
+	font-weight: bold;
+	text-align: left;
+	width: 100px;
+	top: 45px;
+	left: 5px;
+	opacity: 0;
+	z-index: 999;
+	animation: navShow 10s ease-in-out 3s forwards;
+}
+
+@keyframes navShow {
+	0% {opacity: 0; left: 50%; margin-left: -25px;}
+	10% {opacity: 1; transform: scale(1.5);}
+	15% {text-shadow: 5px 5px 3px rgba(0,0,0,0.5); transform: scale(1);}
+	25% {left: 55%;  margin-left: -25px;}
+	35% {left: 5px; margin-left: 0;}
+	75% {opacity: 1;}
+	85% {text-shadow: none;}
+	100% {opacity: 0;}
+}
+
+footer {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: .9em;
+	background: ivory;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	border-top: 5px solid black;
+}
+
+footer ul {
+	padding-left: 100px;
+	list-style: none;
+}
+
+footer ul a {
+	padding-left: 25px;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+footer li {
+	margin: 0 auto 7.5px;
+}
+
+@media screen and (min-width: 375px){
+	footer {
+		text-align: left;
+		
+	}
+	
+	footer ul {
+		padding-left: 50px;
+	}
+
+	footer ul:nth-of-type(1) {
+		float: left;
+	}
+
+	footer ul:nth-of-type(2) {
+		float: right;
+		text-align: right;
+		padding-right: 50px;
+	}
+	
+	footer ul:nth-of-type(2) a {
+	padding-right: 30px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: right;
+}
+
+	footer p {
+		clear: both;
+	}
+}
+
+@media screen and (min-width: 600px) {
+	h2 {
+		font-size: 2em;
+	}
+	
+	#innerNavWrapper a {
+		font-weight: bold;
+		font-size: 1em;
+		top: 5px;
+		background: rgba(255,255,255,0.8);
+		border-top: 1px solid black;
+		border-bottom: 1px solid black;
+		border-radius: 0 0 0 0;
+		transform: rotate(0deg);
+		transition-duration: 1s;
+	}
+	
+	#navHome {
+		margin-left: -245px;
+	}
+
+	#navAbout {
+		margin-left: -110px;
+	}
+
+	#navContact {
+		margin-left: 25px;
+	}
+
+	#navProjects {
+		margin-left: 160px;
+	}
+}
+
+@media screen and (min-width: 1100px) {
+	h2 {
+		font-size: 2.5em;
+	}
+}

@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<title>The Way Unraveled | Code Laboratory and Portfolio</title>
+		<meta name="description" content="Code practice and experimentation with a focus on compassion, inspiration, and the betterment of our future, our world, and all species that don't eat or otherwise threaten humankind.">
+		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/projects.css">
+	</head>
+	<body onResize="window.location.href = window.location.href;">
+		<div id="nav" onclick="nav()">
+			<div id="innerNavWrapper">
+				<a href="index.html" id="navHome">HOME</a>
+				<a href="about.html" id="navAbout">ABOUT</a>
+				<a href="contact.html" id="navContact">CONTACT</a>
+				<a href="projects.html" id="navProjects">PROJETS</a>
+			</div>
+		</div>
+		<div id="navTitle"><p>NAV</p></div>
+		<div id="closeNav" onclick="closeNav()"><p>x</p></div>
+		<div id="welcomeDiv" class="projectDiv">
+			<a href="index.html"><img src="img/yinyangapart2.jpg" alt="Main Logo" id="mainLogo"></a>
+			<h1 id="title_0">PROJECTS</h1>
+		</div>
+		<div id="wrapper2">
+			<hr id="hr0" class="hrToDownLeft">
+			<div id="odomDiv" class="projectDiv">
+				<a href="odom.html" id="odomImg" class="projectImg">The Galactic Odometer</a>
+				<div id="odomShadow" class="shadow"></div>
+				<div class="projectDescritpion">
+					<p>Even when standing still,<br>each of us is still booking it through the cosmos.</p>
+					<h1 id="title_00" class="pTitle">The Galactic Odometer </h1>
+					<p>Punch in your date of birth,<br>and this program will display a running count<br> of the space-miles you've traversed in your lifetime.</p>
+				</div>
+			</div>
+			<hr id="hr1" class="hrToDownRight">
+			<div id="deciderDiv" class="projectDiv">
+				<a href="decider.html" id="deciderImg" class="projectImg">The Decid-o-matic 5000</a>
+				<div id="deciderShadow" class="shadow"></div>
+				<div class="projectDescritpion">
+					<p>Ever have a difficult decision to make?<br>Ever wonder if you were doing the right thing?<br>Well, wonder and worry no longer.</p>
+					<h1 id="title_1" class="pTitle">The <span>Decid-o-matic</span> 5000 </h1>
+					<p>It can take the pressure off,<br>and make that pesky decision for you.</p>
+				</div>
+			</div>
+			<hr id="hr2" class="hrToDownLeft">
+			<div id="backgroundsDiv"  class="projectDiv">
+				<a href="backgrounds/backgrounds.html" id="autumnBlocksImg" class="projectImg backgrounds">Autumn<br>Blocks</a>
+				<a href="backgrounds/backgrounds.html" id="blueLightSaberImg" class="projectImg backgrounds">Blue<br>Lightsaber</a>
+				<a href="backgrounds/backgrounds.html" id="greenSnakeImg" class="projectImg backgrounds">Green<br>Snake</a>
+				<div class="projectDescritpion">
+					<p>I chose not to use the <b>backgrounds</b> above,<br>but I liked them so much, I decided to show them off here.<br>They're all on one page that shifts between themes.</p>
+					<h1 id="title_2" class="pTitle">BACKGROUNDS</h1>
+					<p>Other than shifting-div hacks,<br>I couldn't find a way to animate <b>gradients</b> with pure CSS.<br>So I used Javascript to make the <b>backgrounds</b> below.</p>
+				</div>
+				<a href="backgrounds/gradient.html" id="multipleGradientOrbsImg" class="projectImg backgrounds">Multiple<br>Orbs</a>
+				<a href="backgrounds/gradient_1.html" id="singleGradientOrbImg" class="projectImg backgrounds">Single<br>Orb</a>
+				<a href="backgrounds/LayeredGradient.html" id="layeredGradientImg" class="projectImg backgrounds">Layered<br>Orbs</a>
+			</div>
+			<hr id="hr3" class="hrToDownRight">
+			<div id="websiteDiv" class="projectDiv">
+				<a href="http://gitrobertpm.github.io/t-wu-2" target="_blank" id="websiteImg" class="projectImg backgrounds">Welcome Page</a>
+				<a href="http://gitrobertpm.github.io/t-wu-2/home" target="_blank" id="websiteImg2" class="projectImg backgrounds">Home Page</a>
+				<div id="websiteShadow" class="shadow"></div>
+				<div class="projectDescritpion">
+					<p>Here is an earlier version of this site.</p>
+					<h1 id="title_twu" class="pTitle">The Way Unraveled (practice run)</h1>
+					<p>Despite the somewhat outdated style, there's some cool stuff here.</p>
+				</div>
+			</div>
+			<hr id="hr4" class="hrToDownLeft">
+			<div id="comingSoonDiv" class="projectDiv">
+				<div id="comingSoonImg" class="projectImg"></div>
+				<div id="top" class="table">
+				<br>
+				</div>
+				<div id="column" class="table"></div>
+				<div id="base" class="table"></div>
+				<div id="base2" class="table"></div>
+				<div id="base3" class="table"></div>
+				<!-- <div id="deciderShadow" class="shadow"></div> -->
+				<div class="projectDescritpion">
+					<h1 id="title_3">COMING SOON</h1>
+					<p>The greatest thing I've ever created.</p>
+				</div>
+			</div>
+			<hr id="hr4" class="hrToDownRight">
+		</div>
+		<footer>
+			<p class="center">Thanks for visiting!</p>
+			<ul>
+				<li><a href="index.html" id="homeLink">home</a></li>
+				<li><a href="about.html" id="aboutLink">about</a></li>
+				<li><a href="contact.html" id="contactLink">contact</a></li>
+				<li><a href="projects.html" id="projectsLink" class="selected">projects</a></li>
+			</ul>
+			<ul>
+				<li><a href="https://www.linkedin.com/pub/robert-manolis/b1/40a/34a" target="_blank" id="linkedin">linkedin</a></li>
+				<li><a href="https://github.com/gitrobertpm" target="_blank" id="github">github</a></li>
+				<li><a href="http://codepen.io/robertpm/" target="_blank" id="codepen">codepen</a></li>
+				<li><a href="https://www.behance.net/robertpm" target="_blank" id="behance">behance</a></li>
+				<li><a href="http://teamtreehouse.com/robertmanolis" target="_blank" id="treehouse">treehouse</a></li>
+			</ul>
+			<p class="center">&copy; Robert PM 2015 &copy;</p>
+		</footer>
+		<script src="js/main.js"></script>
+		<script src="js/projects.js"></script>
+	</body>
+</html>

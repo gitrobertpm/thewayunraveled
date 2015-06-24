@@ -1,0 +1,650 @@
+/* INDEX CSS */
+
+#wrapper {
+	background: darkblue;
+	animation: skyfall 4s ease-in-out .5s forwards;
+}
+
+/* TURN NIGHT TO DAY */
+@keyframes skyfall {
+	0% {background: darkblue;}
+	100% {background: deepskyblue;}
+}
+
+#welcomeDiv {
+	position: relative;
+	padding-top: 50px;
+	padding-bottom: 1800px;
+	background: radial-gradient(white 45%, rgba(255,255,255,0.7), rgba(225,225,225,0.3));
+	background-attachment: fixed;
+	overflow: hidden;
+}
+
+#welcomeDiv h2 {
+	margin: 25px auto;
+}
+
+#welcomeDiv p {
+	width: 90%;
+	margin: auto auto 35px;
+}
+
+/* RED FLOWER STYLING AND OPENING ANIMATIONS -- MINIFIED */
+#flowerBox{position:relative;width:100px;height:100px;margin:35px auto;border-radius:50%;-webkit-animation:petalGlow 5s ease .5s forwards;animation:petalGlow 5s ease .5s forwards}@-webkit-keyframes petalGlow{0%{background:0 0;box-shadow:none;transform:rotateZ(0deg)}80%{background:0 0;box-shadow:none}90%{background:rgba(255,0,0,.3);box-shadow:1px 1px 2px #000,1px -1px 2px #000,-1px 1px 2px #000,-1px -1px 2px #000}100%{background:rgba(255,0,0,.3);box-shadow:1px 1px 2px #000,1px -1px 2px #000,-1px 1px 2px #000,-1px -1px 2px #000;transform:rotateZ(360deg)}}@keyframes petalGlow{0%{background:0 0;box-shadow:none;transform:rotateZ(0deg)}80%{background:0 0;box-shadow:none}90%{background:rgba(255,0,0,.3);box-shadow:1px 1px 2px #000,1px -1px 2px #000,-1px 1px 2px #000,-1px -1px 2px #000}100%{background:rgba(255,0,0,.3);box-shadow:1px 1px 2px #fff,1px -1px 2px #000,-1px 1px 2px #000,-1px -1px 2px #000;transform:rotateZ(360deg)}}.petal{position:absolute;left:50%;margin-left:-50px;width:0;height:0;border-style:solid;border-width:50px;border-radius:35%}#petal_1{border-color:rgba(255,0,0,.5) transparent transparent}#petal_2{border-color:rgba(240,0,0,.5) transparent transparent;-webkit-animation:petal_2 .5s ease .5s forwards;animation:petal_2 .5s ease .5s forwards}@-webkit-keyframes petal_2{from{transform:rotate(0deg)}to{transform:rotate(45deg)}}@keyframes petal_2{from{transform:rotate(0deg)}to{transform:rotate(45deg)}}#petal_3{border-color:rgba(225,0,0,.5) transparent transparent;-webkit-animation:petal_3 1s ease .5s forwards;animation:petal_3 1s ease .5s forwards}@-webkit-keyframes petal_3{from{transform:rotate(0deg)}to{transform:rotate(90deg)}}@keyframes petal_3{from{transform:rotate(0deg)}to{transform:rotate(90deg)}}#petal_4{border-color:rgba(210,0,0,.5) transparent transparent;-webkit-animation:petal_4 1.5s ease .5s forwards;animation:petal_4 1.5s ease .5s forwards}@-webkit-keyframes petal_4{from{transform:rotate(0deg)}to{transform:rotate(135deg)}}@keyframes petal_4{from{transform:rotate(0deg)}to{transform:rotate(135deg)}}#petal_5{border-color:rgba(195,0,0,.5) transparent transparent;-webkit-animation:petal_5 2s ease .5s forwards;animation:petal_5 2s ease .5s forwards}@-webkit-keyframes petal_5{from{transform:rotate(0deg)}to{transform:rotate(180deg)}}@keyframes petal_5{from{transform:rotate(0deg)}to{transform:rotate(180deg)}}#petal_6{border-color:rgba(180,0,0,.5) transparent transparent;-webkit-animation:petal_6 2.5s ease .5s forwards;animation:petal_6 2.5s ease .5s forwards}@-webkit-keyframes petal_6{from{transform:rotate(0deg)}to{transform:rotate(225deg)}}@keyframes petal_6{from{transform:rotate(0deg)}to{transform:rotate(225deg)}}#petal_7{border-color:rgba(165,0,0,.5) transparent transparent;-webkit-animation:petal_7 3s ease .5s forwards;animation:petal_7 3s ease .5s forwards}@-webkit-keyframes petal_7{from{transform:rotate(0deg)}to{transform:rotate(270deg)}}@keyframes petal_7{from{transform:rotate(0deg)}to{transform:rotate(270deg)}}#petal_8{border-color:rgba(150,0,0,.5) transparent transparent;-webkit-animation:petal_8 3.5s ease .5s forwards;animation:petal_8 3.5s ease .5s forwards}@-webkit-keyframes petal_8{from{transform:rotate(0deg)}to{transform:rotate(315deg)}}@keyframes petal_8{from{transform:rotate(0deg)}to{transform:rotate(315deg)}}#flowerBulb{position:absolute;top:35px;left:50%;width:25px;height:25px;margin-left:-12.5px;background:#fff;border-radius:50%}#flowerBulb p{font-size:30px;width:25px;height:25px;margin:-10px 0 0}
+
+.container {
+	position: absolute;
+	height: 175px;
+	width: 250px;
+	overflow: hidden;
+	transition-duration: .5s;
+}
+
+/* MISSION STATEMENT(MS) SECTION */
+#missionStatementDiv {
+	top: 420px;
+	left: 50%;
+	height: 150px;
+	width: 250px;
+	margin-left: -125px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+/* IMAGE OF FANCY TEXT FOR MS SECTION */
+#msTextImg {
+	position: relative;
+	display: inline-block;
+	width: 90%;
+	max-width: 420px;
+	height: 200px;
+	margin: auoto;
+	background-repeat: no-repeat;
+	background-size: 90% 90%;
+}
+
+.message {
+	color: rgba(75,75,75,1);
+	max-width: 600px;
+	margin: auto;
+	padding: 5px 10px 7.5px;
+}
+
+/* ANGLE GLOBE IN MS SECTION */
+#coolGlobe {
+	transform: rotate(23deg);
+}
+
+/* DIVE BEHIND THE GLOBE WHERE THE GRADIENT ANIMATIONS ARE CREATED WITH JS */
+#continentalLightshow {
+	width: 150px;
+	height: 150px;
+	margin: auto;
+	border-radius: 50%;
+}
+
+#earth  {
+	width: 150px;
+	height: 150px;
+	margin: 25px auto;
+	background-image: url('../img/misc_icons/world.png');
+	background-repeat: repeat-X;
+	background-size: auto 150px;
+	background-position: left bottom;
+	overflow: hidden;
+	border-radius: 50%;
+	-webkit-animation: earthSpin 20s linear infinite;
+	animation: earthSpin 20s linear infinite;
+}
+
+/* ROTATE GLOBE */
+@-webkit-keyframes earthSpin {
+	0% { background-position: 0 0; }
+	100% { background-position: -200% 0; }
+}
+
+@keyframes earthSpin {
+	0% { background-position: 0 0; }
+	100% { background-position: -200% 0; }
+}
+
+/* QUOTE SECTION */
+#quoteDiv {
+	top: 600px;
+	left: 50%;
+	margin-left: -125px;
+}
+
+.quote {
+	color: rgba(75,75,75,1);
+	font-style: italic;
+	line-height: 25px;
+	max-width: 500px;
+	margin: 10px 5px auto;
+}
+
+.quoted {
+	font-weight: bold;
+}
+
+/* ENCOURAGEMENT SECTION */
+#encouragementDiv {
+	top: 800px;
+	left: 50%;
+	margin-left: -125px;
+}
+
+#innerEncouragementDiv {
+	color: rgba(75,75,75,1);
+}
+
+#yes {
+	background: linear-gradient(lawngreen, lightgreen, green, darkgreen, black);
+}
+
+#no {
+	background: linear-gradient(salmon, tomato, red, firebrick, black);
+}
+
+#yes:disabled {
+	color: black;
+	background: linear-gradient(lightgrey, grey, darkgrey, black);
+}
+
+#no:disabled {
+	color: black;
+	background: linear-gradient(lightgrey, grey, darkgrey, black);
+}
+
+
+/* LINKS */
+#aboutDiv {
+	top: 1000px;
+	left: 50%;
+	margin-left: -125px;
+}
+
+#contactDiv {
+	top: 1200px;
+	left: 50%;
+	margin-left: -125px;
+}
+
+#projectsDiv {
+	top: 1400px;
+	left: 50%;
+	margin-left: -125px;
+}
+
+#deciderDiv {
+	top: 1600px;
+	left: 50%;
+	margin-left: -125px;
+}
+
+#odomDiv {
+	top: 1800px;
+	left: 50%;
+	margin-left: -125px;
+}
+
+#resourcesDiv {
+	top: 2000px;
+	left: 50%;
+	margin-left: -125px;
+}
+
+/* LINK ICON */
+.icon {
+	display: inline-block;
+	width: 75px;
+	height: 75px;
+	margin: auto;
+	background-attachment: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	-webkit-filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.3));
+	-ms-filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.3));
+	filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.3));
+	transition-duration: .5s;
+	animation: iconHover 1s ease-in-out;
+}
+
+.icon:active, .icon:focus, .icon:hover {
+	transform: scale(1.1);
+	-webkit-filter: drop-shadow(20px 20px 15px rgba(0,0,0,0.2));
+	-ms-filter: drop-shadow(20px 20px 15px rgba(0,0,0,0.2));
+	filter: drop-shadow(20px 20px 15px rgba(0,0,0,0.2));
+	transition-duration: .5s;
+}
+
+/* STYLE ADJUSTMENTS FOR MEDIUM SCREENS */
+@media screen and (min-width: 600px){
+	#welcomeDiv {
+		padding-bottom: 1400px;
+	}
+	
+	#missionStatementDiv {
+		top: 400px;
+		height: 150px;
+	}
+	
+	#quoteDiv {
+		margin-left: -300px;
+	}
+
+	#encouragementDiv {
+		top: 600px;
+		margin-left: 50px;
+	}
+
+	#aboutDiv {
+		top: 850px;
+		margin-left: -125px;
+	}
+
+	#contactDiv {
+		top: 1050px;
+		margin-left: -300px;
+	}
+
+	#projectsDiv {
+		top: 1050px;
+		margin-left: 50px;
+	}
+
+	#deciderDiv {
+		top: 1300px;
+		margin-left: 50px;
+	}
+
+	#odomDiv {
+		top: 1300px;
+		margin-left: -300px;
+	}
+
+	#resourcesDiv {
+		top: 1550px;
+	}
+	
+	.icon {
+		width: 100px;
+		height: 100px;
+	}
+}
+
+/* FOR LARGE SCREENS */
+@media screen and (min-width: 1100px){
+	#welcomeDiv {
+		padding-top: 250px;
+		padding-bottom: 450px;
+	}
+	
+	/* STYLING FOR BACKGROUND ANIMATIONS */
+	.orb {
+		position: absolute;
+		border-radius: 50%
+	}
+	
+	#moon {
+		top: -50px;
+		left: 25%;
+		width: 150px;
+		height: 150px;
+		background: radial-gradient(lemonchiffon, lightgrey);
+		filter: blur(5px);
+		animation: moonSet 4s ease-in-out .5s forwards;
+	}
+	
+	@keyframes  moonSet {
+		0% {top: -50px;}
+		45% {left: -25px;}
+		100% {top: 1250px; left: -25px; opacity: 0;}
+	}
+	
+	/* I LEARNED HOW TO MAKE THESE STARS @  https://css-tricks.com/examples/ShapesOfCSS/ */
+	#star { 
+		position: absolute;
+		top: 35px;
+		left: 35%;
+		display: block;
+		width: 0px;
+		height: 0px;
+		border-right: 30px solid transparent;
+		border-bottom: 20px solid lemonchiffon;
+		border-left: 30px solid transparent;
+		filter: blur(2px);
+		-moz-transform: rotate(35deg);
+		animation: starFade 4s ease-in-out .5s forwards;
+	}
+	
+	#star:before { 
+		content: '';
+		display: block;
+		position: absolute;
+		top: -16px;
+		left: -23px;
+		height: 0;
+		width: 0;
+		border-bottom: 24px solid lemonchiffon;
+		border-left: 10px solid transparent;
+		border-right: 10px solid transparent;
+		filter: blur(2px);
+		-moz-transform: rotate(-35deg);
+	}
+		
+	#star:after {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 3px;
+		left: -35px;
+		width: 0px;
+		height: 0px;
+		border-right: 30px solid transparent;
+		border-bottom: 20px solid lemonchiffon;
+		border-left: 30px solid transparent;
+		filter: blur(2px);
+		-moz-transform: rotate(-70deg);
+	}
+	
+	#star2 { 
+		position: absolute;
+		top: 75px;
+		left: 20%;
+		display: block;
+		width: 0px;
+		height: 0px;
+		border-right: 30px solid transparent;
+		border-bottom: 20px solid lemonchiffon;
+		border-left: 30px solid transparent;
+		filter: blur(2px);
+		-moz-transform: rotate(35deg);
+		animation: starFade 4s ease-in-out .5s forwards;
+	}
+	
+	#star2:before { 
+		content: '';
+		display: block;
+		position: absolute;
+		top: -16px;
+		left: -23px;
+		height: 0;
+		width: 0;
+		border-bottom: 24px solid lemonchiffon;
+		border-left: 10px solid transparent;
+		border-right: 10px solid transparent;
+		filter: blur(2px);
+		-moz-transform: rotate(-35deg);
+		}
+		
+	#star2:after {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 3px;
+		left: -35px;
+		width: 0px;
+		height: 0px;
+		border-right: 30px solid transparent;
+		border-bottom: 20px solid lemonchiffon;
+		border-left: 30px solid transparent;
+		filter: blur(2px);
+		-moz-transform: rotate(-70deg);
+	}
+	
+	@keyframes starFade {
+		0% {opacity: 1;}
+		100% {opacity: 0; left: 5%;}
+	}
+
+	#sun {
+		bottom: -300px;
+		right: -100px;
+		width: 250px;
+		height: 250px;
+		background: radial-gradient(yellow, orange);
+		filter: blur(5px);
+		animation: sunRise 4s ease-in-out .5s forwards;
+	}
+
+	@keyframes sunRise {
+		0% {top: 1250px;}
+		45% {right: -100px;}
+		100% {top: -150px; right: 25%;}
+	}
+	
+	
+	/* I GOT THE IDEA FOR THIS CLOUD @ http://thecodeplayer.com/walkthrough/make-a-simple-cloud-in-css3 */
+	#cloud {
+		position: absolute;
+		top: 25px;
+		left: -600px;
+		width: 550px;
+		height: 120px;
+		margin: 120px auto 20px;
+		background: rgba(235,245,255,1);
+		background: linear-gradient(top, rgba(235,240,255,1) 5%, rgba(215,225,240,1));
+		border-radius: 100px;
+		filter: blur(2px);
+		animation: cloudScoot 4s ease-in-out .5s forwards;
+	}
+
+	#cloud:after, #cloud:before {
+		content: '';
+		position: absolute;
+		background: rgba(235,245,255,0.9);
+		filter: blur(2px);
+	}
+
+	#cloud:after {
+		width: 350px;
+		height: 200px;
+		top: -100px;
+		left: 50px;
+		border-radius: 200px;
+	}
+
+	#cloud:before {
+		width: 180px;
+		height: 150px;
+		top: -50px;
+		right: 50px;
+		border-radius: 300px;
+	}
+	
+	@keyframes cloudScoot {
+		0% {left: -600px;}
+		100% {left: 65%; top: -50px;}
+	}
+	
+	/* THE BIRD WAS JUST A SILLY THIN I THOUGH OF AND QUICKLY THREW TOGETHER IN ILLUSTRATOR */
+	#bird {
+		position: absolute;
+		top: 50px;
+		left: 105%;
+		width: 75px;
+		height: 25px;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		animation: birdFly 2s ease-in-out 5.25s forwards;
+	}
+	
+	@keyframes birdFly {
+		0% {left: 105%; transform: rotate(-5deg)}
+		50% {top: 200px; transform: rotate(5deg)}
+		100% {left: -10%; top: -5px;}
+	}
+	
+	.container {
+		transform: scale(0);
+	}
+	
+	/* CHANGE POSITION AND ANIMATE INDIVIDUAL SECTIONS */
+	#missionStatementDiv {
+		top: 75px;
+		margin-left: -125px;
+		-webkit-animation: reveal_1 1.5s ease-in-out forwards;
+		animation: reveal_1 1.5s ease-in-out forwards;
+	}
+
+	@-webkit-keyframes reveal_1 {
+		from {transform: scale(0.0);}
+		to {transform: scale(1)}
+	}
+	
+	@keyframes reveal_1 {
+		from {transform: scale(0.0);}
+		to {transform: scale(1)}
+	}
+	
+	#quoteDiv {
+		top: 125px;
+		margin-left: -550px;
+		-webkit-animation: reveal_8 1.5s ease-in-out 3.5s forwards;
+		animation: reveal_8 1.5s ease-in-out 3.5s forwards;
+	}
+	
+	@-webkit-keyframes reveal_8 {
+		from {transform: scale(0.0);}
+		to {transform: scale(1)}
+	}
+	
+	@keyframes reveal_8 {
+		from {transform: scale(0.0);}
+		to {transform: scale(1)}
+	}
+
+	#encouragementDiv {
+		top: 125px;
+		margin-left: 300px;
+		-webkit-animation: reveal_2 1.5s ease-in-out .5s forwards;
+		animation: reveal_2 1.5s ease-in-out .5s forwards;
+	}
+	
+	@-webkit-keyframes reveal_2 {
+		from {transform: scale(0.0);}
+		to {transform: scale(1)}
+	}
+
+	@keyframes reveal_2 {
+		from {transform: scale(0.0);}
+		to {transform: scale(1)}
+	}
+
+	#aboutDiv {
+		top: 700px;
+		margin-left: -125px;
+		-webkit-animation: reveal_5 1.5s ease-in-out 2s forwards;
+		animation: reveal_5 1.5s ease-in-out 2s forwards;
+	}
+	
+	@-webkit-keyframes reveal_5 {
+		from {transform: scale(0.0);}
+		to {transform: scale(1)}
+	}
+	
+	@keyframes reveal_5 {
+		from {transform: scale(0.0);}
+		to {transform: scale(1)}
+	}
+
+	#contactDiv {
+		top: 350px;
+		margin-left: -550px;
+		-webkit-animation: reveal_7 1.5s ease-in-out 3s forwards;
+		animation: reveal_7 1.5s ease-in-out 3s forwards;
+	}
+	
+	@-webkit-keyframes reveal_7 {
+		from {transform: scale(0.0);}
+		to {transform: scale(1)}
+	}
+	
+	@keyframes reveal_7 {
+		from {transform: scale(0.0);}
+		to {transform: scale(1)}
+	}
+
+	#projectsDiv {
+		top: 350px;
+		margin-left: 300px;
+		-webkit-animation: reveal_3 1.5s ease-in-out 1s forwards;
+		animation: reveal_3 1.5s ease-in-out 1s forwards;
+	}
+	
+	@-webkit-keyframes reveal_3 {
+		from {transform: scale(0.0);}
+		to {transform: scale(1)}
+	}
+	
+	@keyframes reveal_3 {
+		from {transform: scale(0.0);}
+		to {transform: scale(1)}
+	}
+
+	#deciderDiv {
+		top: 575px;
+		margin-left: 300px;
+		-webkit-animation: reveal_4 1.5s ease-in-out 1.5s forwards;
+		animation: reveal_4 1.5s ease-in-out 1.5s forwards;
+	}
+	
+	@-webkit-keyframes reveal_4 {
+		from {transform: scale(0.0);}
+		to {transform: scale(1)}
+	}
+	
+	@keyframes reveal_4 {
+		from {transform: scale(0.0);}
+		to {transform: scale(1)}
+	}
+
+	#odomDiv {
+		top: 575px;
+		margin-left: -550px;
+		-webkit-animation: reveal_6 1.5s ease-in-out 2.5s forwards;
+		animation: reveal_6 1.5s ease-in-out 2.5s forwards;
+	}
+	
+	@-webkit-keyframes reveal_6 {
+		from {transform: scale(0.0);}
+		to {transform: scale(1)}
+	}
+	
+	@keyframes reveal_6 {
+		from {transform: scale(0.0);}
+		to {transform: scale(1)}
+	}
+
+	#resourcesDiv {
+		top: 900px;
+		margin-left: -125px;
+		-webkit-animation: reveal_9 1.5s ease-in-out 4s forwards;
+		animation: reveal_9 1.5s ease-in-out 4s forwards;
+	}
+	
+	@-webkit-keyframes reveal_9 {
+		from {transform: scale(0.0);}
+		to {transform: scale(1)}
+	}
+	
+	@keyframes reveal_9 {
+		from {transform: scale(0.0);}
+		to {transform: scale(1)}
+	}
+}
+
+/* EVENS OUT ICONS FOR LARGER SCREENS */
+@media screen and (min-width: 1400px){	
+	#contactDiv {
+		top: 350px;
+		margin-left: -700px;
+	}
+
+	#projectsDiv {
+		top: 350px;
+		margin-left: 450px;
+	}
+}

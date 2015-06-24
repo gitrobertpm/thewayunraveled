@@ -1,0 +1,146 @@
+/* GRADIENTS_1 JS */
+
+body {
+	text-align: center;
+	width: 100%;
+}
+
+#navTitle {
+	display: none;
+}
+
+a {
+	color: dodgerblue;
+	text-decoration: none;
+	transition-duration: .25s;
+	outline: 0;
+}
+
+a:hover, a:focus, a:active {
+	color: white;
+	text-shadow: 1px 1px 2px blue, -1px 1px 2px blue, -1px -1px 4px deepskyblue, 1px -1px 4px deepskyblue;
+	transition-duration: .5s;
+}
+
+h1 {
+	font-weight: 100;
+	font-size: 21px;
+	width: 90%;
+	max-width: 1000px;
+	margin: 25px auto;
+	padding: 5px 7.5px 10px;
+}
+
+.g_Divs {
+	width: 90%;
+	max-width: 300px;
+	margin: 25px auto;
+	padding-top: 10px;
+	padding-bottom: 15px;
+}
+
+#rgbValueNowDiv {
+	font-size: .8em;
+	height: 75px !important;
+	margin-top: 25px;
+	padding-top: 15px;
+	overflow: hidden;
+}
+
+#rgbValueNowDiv:active, #rgbValueNowDiv:focus, #rgbValueNowDiv:hover {
+	height: 225px !important;
+}
+
+#rgbTitle,
+button {
+	color: dodgerblue;
+	font-size: 20px;
+	text-shadow: -1px -1px 0px lightblue;
+	width: 90%;
+	margin: auto;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border: 3px groove black;
+}
+
+#rgbValueDiv {
+	height: 75px;
+	overflow: hidden;
+}
+
+#rgbValueDiv:active, #rgbValueDiv:focus, #rgbValueDiv:hover {
+	height: 225px;
+}
+
+#rgbTitle {
+	margin-top: 5px;
+}
+
+#rgbTitle,
+button,
+h1,
+.g_Divs {
+	background: rgba(255,255,255,0.3);
+	box-shadow: 0 2px 2px white inset, 0 -2px 2px white inset;
+}
+
+#rgbTitle:active, #rgbTitle:focus, #rgbTitle:hover ,
+button:active, button:focus, button:hover {
+	color: white;
+	text-shadow: -1px -1px 0px deepskyblue;
+}
+
+footer {
+	position: absolute;
+	top: 888px;
+}
+
+/* MEDIA QUERIES -- SMALL SCREENS */
+@media screen and (min-width: 500px) {
+	#rgbValueNowDiv {
+		height: 45px;
+	}
+}
+
+/* MEDIUM SCREENS */
+@media screen and (min-width: 750px) {
+	body {
+		height: 700px;
+	}
+
+	h1 {
+		font-size: 30px;
+	}
+	
+	.gradLink {
+		font-size: 20px;
+	}
+	
+	#rgbValueNowDiv,
+	#rgbValueDiv {
+		position: absolute;
+		margin: auto;
+	}
+	
+	#rgbValueNowDiv {
+		left: 50px;
+	}
+	
+	#rgbValueDiv {
+		right: 50px;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	#rgbValueNowDiv,
+	#rgbValueDiv {
+		top: 85px;
+	}
+}
+
+@media screen and (min-width: 1750px) {
+	#rgbValueNowDiv,
+	#rgbValueDiv {
+		top: 0px;
+	}
+}

@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<title>The Great Decider</title>
+		<meta name="description" content="answers">
+		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/decider.css">
+	</head>
+	<body>
+		<div id="nav" onclick="nav()">
+			<div id="innerNavWrapper">
+				<a href="index.html" id="navHome">HOME</a>
+				<a href="about.html" id="navAbout">ABOUT</a>
+				<a href="contact.html" id="navContact">CONTACT</a>
+				<a href="projects.html" id="navProjects">PROJETS</a>
+			</div>
+		</div>
+		<div id="navTitle"><p>NAV</p></div>
+		<div id="closeNav" onclick="closeNav()"><p>x</p></div>
+		<header>
+			<a href="index.html"><img src="img/yinYangApartNew.png" alt="Main Logo" id="mainLogo"></a>
+		</header>
+		<div id="deviceWrapper">
+			<div id="titleDiv">
+				<h1 id="title">The Decid-o-matic 5000</h1>
+				<p>Helping people with their toughest decisions since 1974</p>
+			</div>
+			<div id="device">
+				<!-- BEGIN BUTTON -->
+				<button type="button" id="beginButton" onclick="begin()">Initialize</button>
+				<!-- COMMENT -->
+				<div id="comment"></div>
+				<div id="questionBorderDiv">
+					<div id="question">
+						<div id="nightRider"></div>
+					</div>
+				</div>
+				<!-- SCALE -->
+				<div id="scale">
+					<div id="redLine"></div>
+					<p> | - - - - - | - - - - - | - - - - - | - - - - - | - - - - - | - - - - - | - - - - - | - - - - - | - - - - - | - - - - - | - - - - - |</p>
+				</div>
+				<div id="buttonDiv">
+					<!-- DO IT DIV -->
+					<div id="doIt">
+						<p>Do</p>
+					</div>
+					<!-- CONTINUE, POSITIVE, NEGATIVE, AND NEITHER BUTTONS -->
+					<button type="button" id="affirmativeButton" onclick="affirmative()">Positive</button>
+					<button type="button" id="negativeButton" onclick="negative()">Negative</button>
+					<button type="button" id="neitherButton" onclick="neither()">Neither</button>
+					<br>
+					<button type="button" id="continueButton" onclick="continueBtn()">Continue</button>
+					<!-- DON'T DO IT DIV -->
+					<div id="dontDoIt">
+						<p>Don't</p>
+					</div>
+				</div>
+				<!-- QUESTION -->
+				<div id="disclaimer">
+					<p>*This machine's responses can only be as reliable as your answers are true.</p>
+					<p>**Responses may not apply in life-or-death situations.</p>
+				</div>
+			</div>
+			<p id="yinYang"><a href="about.html#yinyangcontent">&#9775;</a></p>
+			<input type="button" value="Previous Page" id="goback" onclick="history.back(-1)" />
+		</div>
+		<!-- FOOTER -->
+		<footer>
+			<p class="center">Thanks for visiting!</p>
+			<ul>
+				<li><a href="index.html" id="homeLink">home</a></li>
+				<li><a href="about.html" id="aboutLink">about</a></li>
+				<li><a href="contact.html" id="contactLink">contact</a></li>
+				<li><a href="projects.html" id="projectsLink">projects</a></li>
+			</ul>
+			<ul>
+				<li><a href="https://www.linkedin.com/pub/robert-manolis/b1/40a/34a" target="_blank" id="linkedin">linkedin</a></li>
+				<li><a href="https://github.com/gitrobertpm" target="_blank" id="github">github</a></li>
+				<li><a href="http://codepen.io/robertpm/" target="_blank" id="codepen">codepen</a></li>
+				<li><a href="https://www.behance.net/robertpm" target="_blank" id="behance">behance</a></li>
+				<li><a href="http://teamtreehouse.com/robertmanolis" target="_blank" id="treehouse">treehouse</a></li>
+			</ul>
+			<p class="center">&copy; Robert PM 2015 &copy;</p>
+		</footer>
+		<script src="js/main.js"></script>
+		<script src ="js/decider.js"></script>
+	</body>
+</html>

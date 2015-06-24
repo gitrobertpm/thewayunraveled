@@ -1,0 +1,793 @@
+/* ABOUT CSS */
+
+body {
+	padding-top: 15px;
+}
+
+#welcomeDiv {
+	background: linear-gradient(to right, white, transparent, white);
+}
+
+#background {
+	position: absolute;
+	top: 100px;
+	right: 0;
+	bottom: 300px;
+	left: 0;
+	background-repeat: no-repeat !important;
+	background-position: center top !important;
+	background-size: 350px 225px !important;
+	filter: blur(2px) hue-rotate(150deg);
+	z-index: -1;
+}
+
+/* BLUE FLOWER STYLING AND OPENING ANIMATIONS -- MINIFIED */
+#flowerBox{position:relative;width:100px;height:100px;margin:35px auto;border-radius:50%;-webkit-animation:petalGlow 5s ease .5s forwards;animation:petalGlow 5s ease .5s forwards}@-webkit-keyframes petalGlow{0%{background:0 0;box-shadow:none;transform:rotateZ(0deg)}80%{background:0 0;box-shadow:none}90%{background:rgba(0,0,255,.3);box-shadow:1px 1px 2px #000,1px -1px 2px #000,-1px 1px 2px #000,-1px -1px 2px #000}100%{background:rgba(0,0,255,.3);box-shadow:1px 1px 2px #000,1px -1px 2px #000,-1px 1px 2px #000,-1px -1px 2px #000;transform:rotateZ(360deg)}}@keyframes petalGlow{0%{background:0 0;box-shadow:none;transform:rotateZ(0deg)}80%{background:0 0;box-shadow:none}90%{background:rgba(0,0,255,.3);box-shadow:1px 1px 2px #000,1px -1px 2px #000,-1px 1px 2px #000,-1px -1px 2px #000}100%{background:rgba(0,0,255,.3);box-shadow:1px 1px 2px #fff,1px -1px 2px #000,-1px 1px 2px #000,-1px -1px 2px #000;transform:rotateZ(360deg)}}.petal{position:absolute;left:50%;margin-left:-50px;width:0;height:0;border-style:solid;border-width:50px;border-radius:35%}#petal_1{border-color:rgba(0,0,255,.5) transparent transparent}#petal_2{border-color:rgba(0,0,240,.5) transparent transparent;-webkit-animation:petal_2 .5s ease .5s forwards;animation:petal_2 .5s ease .5s forwards}@-webkit-keyframes petal_2{from{transform:rotate(0deg)}to{transform:rotate(45deg)}}@keyframes petal_2{from{transform:rotate(0deg)}to{transform:rotate(45deg)}}#petal_3{border-color:rgba(0,0,255,.5) transparent transparent;-webkit-animation:petal_3 1s ease .5s forwards;animation:petal_3 1s ease .5s forwards}@-webkit-keyframes petal_3{from{transform:rotate(0deg)}to{transform:rotate(90deg)}}@keyframes petal_3{from{transform:rotate(0deg)}to{transform:rotate(90deg)}}#petal_4{border-color:rgba(0,0,210,.5) transparent transparent;-webkit-animation:petal_4 1.5s ease .5s forwards;animation:petal_4 1.5s ease .5s forwards}@-webkit-keyframes petal_4{from{transform:rotate(0deg)}to{transform:rotate(135deg)}}@keyframes petal_4{from{transform:rotate(0deg)}to{transform:rotate(135deg)}}#petal_5{border-color:rgba(0,0,195,.5) transparent transparent;-webkit-animation:petal_5 2s ease .5s forwards;animation:petal_5 2s ease .5s forwards}@-webkit-keyframes petal_5{from{transform:rotate(0deg)}to{transform:rotate(180deg)}}@keyframes petal_5{from{transform:rotate(0deg)}to{transform:rotate(180deg)}}#petal_6{border-color:rgba(0,0,180,.5) transparent transparent;-webkit-animation:petal_6 2.5s ease .5s forwards;animation:petal_6 2.5s ease .5s forwards}@-webkit-keyframes petal_6{from{transform:rotate(0deg)}to{transform:rotate(225deg)}}@keyframes petal_6{from{transform:rotate(0deg)}to{transform:rotate(225deg)}}#petal_7{border-color:rgba(0,0,165,.5) transparent transparent;-webkit-animation:petal_7 3s ease .5s forwards;animation:petal_7 3s ease .5s forwards}@-webkit-keyframes petal_7{from{transform:rotate(0deg)}to{transform:rotate(270deg)}}@keyframes petal_7{from{transform:rotate(0deg)}to{transform:rotate(270deg)}}#petal_8{border-color:rgba(0,0,150,.5) transparent transparent;-webkit-animation:petal_8 3.5s ease .5s forwards;animation:petal_8 3.5s ease .5s forwards}@-webkit-keyframes petal_8{from{transform:rotate(0deg)}to{transform:rotate(315deg)}}@keyframes petal_8{from{transform:rotate(0deg)}to{transform:rotate(315deg)}}#flowerBulb{position:absolute;top:35px;left:50%;width:25px;height:25px;margin-left:-12.5px;background:#fff;border-radius:50%}#flowerBulb p{font-size:30px;width:25px;height:25px;margin:-10px 0 0}
+
+img {
+	margin: 10px auto;
+}
+
+#twu {
+	width: 100px;
+}
+
+#aboutSection3 {
+	background-size: 50px 50px !important;
+	background-repeat: no-repeat !important;
+	background-position: center !important;
+}
+
+#me {
+	width: 90px;
+	border-radius: 5px;
+}
+
+.aboutSection,
+.aboutSubsection {
+	width: 250px;
+	height: 175px;
+	margin: 15px auto 25px;
+	padding-top: 15px;
+	padding-bottom: 20px;
+	overflow: hidden;
+	transition-duration: .5s;
+}
+
+.aboutSubsection {
+	height: 150px;
+}
+
+.aboutSubsectionIcon {
+	width: 75px;
+	height: 75px;
+	margin: 10px auto 15px;
+	background-size: 100% 100% !important;
+	background-repeat: no-repeat !important;
+	transition-duration: .5s;
+	-webkit-filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.3));
+	-ms-filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.3));
+	filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.3));
+	border: 1px solid black;
+}
+
+.aboutSubsection p {
+	max-width: 1000px;
+	margin: 15px auto 25px;
+	padding-left: 10px;
+	padding-right: 5px;
+}
+
+.stationaryText {
+	display: block;
+	font-size: 1.5em;
+	color: white;
+	width: 90%;
+	max-width: 420px;
+	margin: 50px auto 35px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background: linear-gradient(black, rgba(100,150,100,0.7), white);
+}
+
+.transitioningText {
+	font-size: 2em;
+}
+
+@keyframes textGrow {
+	0% {color: transparent; text-shadow: none;}
+	25% {color: green; text-shadow: 0px -2px 0px black, 1px -2px 2px black;}
+	50% {color: green; text-shadow: none;}
+	75% {color: green; text-shadow: none;}
+	100% {color: transparent; text-shadow: none;}
+}
+
+#techTalk {
+	position: relative;
+	perspective: 1500px;
+}
+
+.cubeSide {
+	color: steelblue;
+	position: absolute;
+	left: 50%;
+	width: 225px;
+	height: 225px;
+	/* border: 1px solid deepskyblue; */
+}
+
+#cubeSide1 {
+	top: 100px;
+	margin-left: -115px;
+	background: linear-gradient(to bottom right, rgba(255,255,255,0.9), rgba(225,225,225,0.9));
+	transform: skewY(30deg);
+}
+
+#cubeSide2 {
+	top: 315px;
+	margin-left: -160px;
+	background: linear-gradient(to bottom right, rgba(255,255,255,0.9), rgba(225,225,225,0.9));
+	transform: rotateZ(30deg) skewX(-30deg);
+}
+
+#cubeSide3 {
+	top: 510px;
+	margin-left: -115px;
+	background: linear-gradient(to top left, rgba(255,255,255,0.9), rgba(200,200,200,0.9));
+	transform: skewY(-30deg);
+}
+
+#yySpeech {
+	max-width: 700px;
+	margin: auto;
+	padding-top: 15px;
+	background: rgba(255,255,255,0.9);
+	box-shadow: 0 5px 5px white, 0 -5px 5px white;
+}
+
+#myInfo_0 {
+	position: relative;
+}
+
+.mi {
+	/* margin: 10px auto auto; */
+}
+
+.eAeExperience {
+	position: relative;
+}
+
+#expInfo {
+	top: -150px;
+}
+
+#eduInfo {
+	top:2500px;
+}
+
+#aExperience p {
+	margin: 0 auto;
+}
+
+.empTitle,
+.empName,
+.projName,
+.schName,
+.olName {
+	color: black;
+	font-weight: bold;
+}
+
+.empLoc,
+.empDate,
+.schLoc,
+.schDate,
+.olDate {
+	font-size: .9em;
+}
+
+.projImg {
+	display: inline-block;
+	width: 200px;
+	height: 125px;
+	margin: 10px auto;
+	background-size: 100% 100% !important;
+}
+
+#projImg0 {
+	width: 200px;
+	height: 150px;
+}
+
+#projImg1 {
+	width: 150px;
+	height: 175px;
+}
+
+#online ul,
+#online li {
+	list-style: none;
+	padding-left: 0;
+}
+
+/* Ribbon Box */
+/* GOT THE IDEA FOR THE ROUNDED RIBBON @ http://thecodeplayer.com/walkthrough/make-a-simple-cloud-in-css3 */
+.ribbon {
+	position: relative;
+	top: 25px;
+	left: 50%;
+	margin-left: -150px;
+	width: 300px;
+	padding: 25px 10px 5px;
+	background: linear-gradient(to bottom right, rgba(235,235,235,1) 10%, white 50%);
+	filter: drop-shadow(5px 5px 10px rgba(200,200,200,0.9));
+}
+.ribbon h3 {
+	display: block;
+	height: 40px;
+	width: 325px;
+	margin: 0;
+	padding: 5px 10px 5px 30px;
+	position: relative;
+	left: -30px;
+	color: white;
+	background: linear-gradient(to right, black, white);
+	box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+.ribbon h3::before {
+	position: absolute;
+	content: '';
+	display: block;
+	width: 0;
+	height: 0;
+	left: 0;
+	bottom: -11px;
+	z-index: 9;
+}
+/* Round */
+.ribbon.round h3 {
+	border-radius: 5px 0px 0px 0px;
+}
+.ribbon.round h3::before, .ribbon.round h3::after {
+	width: 20px;
+	height: 8px;
+	bottom: -6px;
+	border: none;
+	border-top:2px solid black;
+	border-left:1px solid black;    
+	border-bottom:1px solid black;    
+	background: rgb(61,0,0);
+	border-radius: 5px 0px 0px 5px;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.3), inset 2px 1px 2px rgba(0,0,0,0.3);
+}
+
+#skillsKey h4 {
+	display: inline-block;
+	width: 135px;
+	border-bottom: 2px solid black;
+}
+
+.skill {
+	/* border: 1px solid blue !important; */
+}
+
+.skill div {
+	display: inline-block;
+	/* border: 1px solid black; */
+}
+
+.skillInfo {
+	width: 135px;
+}
+
+.skillName {
+	display: inline-block;
+	text-align: left;
+	font-size: 0.9em;
+	width: 90px;
+	padding-left: 0px !important;
+	/* border: 1px solid black; */
+}
+
+.skillLogo {
+	width: 35px;
+	height: 35px;
+	margin-bottom: -10px;
+	/* border: 1px solid black; */
+	filter: drop-shadow(-5px 5px 5px rgba(0,0,0,0.3));
+}
+
+.skillLev {
+	text-align: left;
+	width: 135px;
+	height: 25px;
+	margin-bottom: -8px;
+	/* border: 1px solid red !important; */
+}
+
+.skillNum {
+	display: inline-block;
+	color: white;
+	font-size: 0.9em;
+	width: 15px;
+	margin: 0px auto !important;
+	padding: 0px !important;
+	text-shadow: 1px 1px 0px black;
+	/* border: 1px solid black; */
+}
+
+.skillLevDis {
+	text-align: right;
+	height: 100%;
+	padding-right: 5px;
+	filter: drop-shadow(-5px 5px 5px rgba(0,0,0,0.3));
+}
+
+/* HTML */
+#skillLevDis0 {
+	background: linear-gradient(to right, black, orange);
+	width: 110px;
+}
+
+/* CSS */
+#skillLevDis1 {
+	background: linear-gradient(to right, black, dodgerblue);
+	width: 110px;
+}
+
+/* JAVASCRIPT */
+#skillLevDis2 {
+	background: linear-gradient(to right, black, red);
+	width: 83px;
+}
+
+/* ILLUSTRATOR */
+#skillLevDis3 {
+	background: linear-gradient(to right, black, orange);
+	width: 97px;
+}
+
+/* PHOTOSHOP */
+#skillLevDis4 {
+	background: linear-gradient(to right, black, dodgerblue);
+	width: 70px;
+}
+
+/* GITHUB */
+#skillLevDis5 {
+	background: linear-gradient(to right, black, purple);
+	width: 54px;
+}
+
+/* JQUERY */
+#skillLevDis6 {
+	background: linear-gradient(to right, black, darkblue);
+	width: 40px;
+}
+
+/* AJAX */
+#skillLevDis7 {
+	background: linear-gradient(to right, black, blue);
+	width: 40px;
+}
+
+/* NODE */
+#skillLevDis8 {
+	background: linear-gradient(to right, black, green);
+	width: 40px;
+}
+
+/* ANGULAR */
+#skillLevDis9 {
+	background: linear-gradient(to right, black, red);
+	width: 27px;
+}
+
+/* PHP */
+#skillLevDis10 {
+	background: linear-gradient(to right, black, purple);
+	width: 27px;
+}
+
+/* MYSQL */
+#skillLevDis11 {
+	background: linear-gradient(to right, dodgerblue, orange);
+	width: 27px;
+}
+
+.skillHeading {
+	font-size: 1.2em;
+	max-width: 400px !important;
+	margin: auto;
+	border-bottom: 1px solid black;
+}
+
+#aSkills ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+/* MEDIUM SCREENS */
+@media screen and (min-width: 600px){
+	
+	#background {
+		top: 90px;
+		background-size: 500px 350px !important;
+		filter: blur(3px) hue-rotate(150deg);
+	}
+
+	#welcomeDiv {
+		padding-bottom: 400px;
+	}
+
+	#aboutSection3 {
+		left: 50%;
+		margin-left: -125px;
+	}
+
+	.aboutSection,
+	.aboutSubsection {
+		position: absolute;
+		top: 350px;
+		left: 50%;
+	}
+	
+	#aboutSection1 {
+		margin-left: -250px;
+	}
+	
+	#aboutSection2 {
+		margin-left: 25px;
+	}
+	
+	#aTitle {
+		top: 200px;
+		margin-left: -325px;
+	}
+	
+	#aObjective_1 {
+		top: 250px;
+		margin-left: -125px;
+	}
+	
+	.triangle {
+		position: absolute;
+		left: 50%;
+		top: 175px;
+		width: 0px;
+		height: 0px;
+		border-style:solid;
+		border-width: 25px;
+		border-color: transparent transparent transparent rgb(0,50,0);
+		filter: blur(1px);
+	}
+
+	#triangle1 {
+		transform: rotate(45deg);
+		margin-left: -197px;
+	}
+	
+	#triangle2 {
+		transform: rotate(135deg);
+		margin-left: 153px;
+	}
+	
+	#aMotivation {
+		top: 200px;
+		margin-left: 75px;
+	}
+	
+	#aTech {
+		top: 375px;
+		margin-left: -325px;
+	}
+
+	#cubeSide1 {
+		top: 260px;
+		margin-left: -225px;
+		background: linear-gradient(to bottom right, rgba(255,255,255,0.9), rgba(225,225,225,0.9));
+		transform: skewY(30deg);
+	}
+
+	#cubeSide2 {
+		top: 85px;
+		width: 260px;
+		margin-left: -130px;
+		background: linear-gradient(to bottom right, rgba(255,255,255,0.9), rgba(225,225,225,0.9));
+		transform: rotateZ(30deg) skewX(-30deg);
+	}
+
+	#cubeSide3 {
+		top: 260px;
+		margin-left: 0px;
+		background: linear-gradient(to top left, rgba(255,255,255,0.9), rgba(200,200,200,0.9));
+		transform: skewY(-30deg);
+	}
+	
+	#aUra {
+		top: 420px;
+		margin-left: -125px;
+	}
+	
+	#aYy {
+		top: 375px;
+		margin-left: 75px;
+	}
+	
+	.myInfo {
+		position: absolute;
+		display: block;
+		top: -125px;
+		left: 50%;
+		margin-left: -137.5px;
+		width: 275px;
+		transition-duration: .5s;
+	}
+	
+	#myInfo_1 {
+		margin-left: -300px;
+		transform: rotate(-90deg);
+	}
+	
+	#myInfo_2 {
+		margin-left: 50px;
+		transform: rotate(90deg);
+	}
+	
+	#thanks {
+		position: absolute;
+		display: block;
+		top: 625px;
+		left: 50%;
+		width: 350px;
+		margin-left: -175px;
+	}
+	
+	#aSummary {
+		top: 250px;
+		margin-left: -125px;
+	}
+	
+	#aExperience {
+		top: 200px;
+		margin-left: -325px;
+	}
+	
+	.expWrapper {
+		position: relative;
+	}
+	
+	.eAeSection {
+		position: absolute;
+		left: 50%;
+	}
+	
+	#expInfo {
+		top: -150px;
+	}
+
+	#eduInfo {
+		top:2500px;
+	}
+	
+	/* Ribbon Box */
+	.ribbon {
+		position: absolute;
+		top: 150px;
+		margin-left: -250px;
+		width: 500px;
+	}
+	.ribbon h3 {
+		width: 525px;
+	}
+	
+	#aContact{
+		top: 200px;
+		margin-left: 75px;
+	}
+	
+	#aSkills {
+		top: 375px;
+		margin-left: -325px;
+	}
+	
+	#skills,
+	.iCat {
+		padding: 15px;
+		margin: 15px;
+		box-shadow: -5px 5px 5px rgba(0,0,0,0.3);
+	}
+	
+	#aProjects {
+		top: 420px;
+		margin-left: -125px;
+	}
+	
+	#aBio {
+		top: 375px;
+		margin-left: 75px;
+	}
+}
+
+/* LARGE SCREEN */
+@media screen and (min-width: 1100px) {
+	
+	#background {
+		top: 150px;
+		background-size: 500px 400px !important;
+	}
+
+	#welcomeDiv {
+		padding-top: 50px;
+		padding-bottom: 350px;
+	}
+
+	.aboutSection,
+	.aboutSubsection {
+		top: 420px;
+	}
+	
+	#aboutSection1 {
+		margin-left: -350px;
+	}
+	
+	#aboutSection2 {
+		margin-left: 100px;
+	}
+	
+	#aTitle {
+		top: 200px;
+		margin-left: -450px;
+	}
+	
+	#aMotivation {
+		top: 200px;
+		margin-left: 200px;
+	}
+	
+	#aTech {
+		top: 375px;
+		margin-left: -450px;
+	}
+	
+	#aYy {
+		top: 375px;
+		margin-left: 200px;
+	}
+	
+	#aExperience {
+		top: 200px;
+		margin-left: -450px;
+	}
+	
+	#expInfo {
+		top: -150px;
+	}
+
+	#eduInfo {
+		top: 1850px;
+	}
+	
+	.ribbon {
+		top: 150px;
+		margin-left: -500px;
+		width: 1000px;
+	}
+	.ribbon h3 {
+		width: 1025px;
+	}
+	
+	#emp0h0,
+	#emp1h0,
+	#emp2h0,
+	#emp3h0,
+	#emp4h0 {
+		float: left;
+		text-align: left;
+	}
+	
+	#emp0h1,
+	#emp1h1,
+	#emp2h1,
+	#emp3h1,
+	#emp4h1 {
+		float: right;
+		text-align: right;
+	}
+	
+	#emp0h2,
+	#emp1h2,
+	#emp2h2,
+	#emp3h2,
+	#emp4h2	{
+		clear: both;
+		margin-top: 50px;
+		text-align: justify;
+	}
+	
+	#proj2Det0 {
+		max-width: 700px;
+		margin: auto;
+	}
+	
+	.projDes {
+		text-align: justify;
+	}
+	
+	#ol0,
+	#school0 {
+		float: left;
+	}
+	
+	#ol1,
+	#school1 {
+		clear: both;
+		margin-top: -100px;
+	}
+	
+	#ol2,
+	#school2 {
+		float: right;
+		clear: both;
+		margin-top: -135px;
+	}
+	
+	#ol2 {
+		margin-top: -275px;
+	}
+	
+	#aContact {
+		top: 200px;
+		margin-left: 200px;
+	}
+	
+	#aSkills {
+		top: 375px;
+		margin-left: -450px;
+	}
+	
+	#skills {
+		position: absolute;
+		top: -50px;
+		left: 50%;
+		width: 350px;
+		margin-left: -175px;
+		transform: rotate(-90deg);
+		box-shadow: -5px -5px 5px rgba(0,0,0,0.3);
+	}
+	
+	#skillGauge {
+		margin-left: 135px;
+		margin-bottom: 25px;
+	}
+	
+	#skillCategory {
+		position: absolute;
+		width: 500px !important;
+		top: 360px;
+		left: -225px;
+		transform: rotate(90deg);
+	}
+	
+	.skillInfo {
+		transform: rotate(35deg);
+	}
+	
+	.skillNum {
+		transform: rotate(90deg);
+	}
+	
+	#interests {
+		margin-top: 420px;
+	}
+	
+	.iCat {
+		width: 800px;
+		margin: 15px auto;
+	}
+	
+	#aBio {
+		top: 375px;
+		margin-left: 200px;
+	}
+}

@@ -1,0 +1,221 @@
+/* PROJECTS PAGE STYLING*/
+
+/* GENERAL STUFF */
+body {
+	text-align: center;
+	padding-top: 45px;
+}
+
+#navTitle {
+	display: none;
+}
+
+a {
+	color: dodgerblue;
+	text-decoration: none;
+	transition-duration: .25s;
+	outline: 0;
+}
+
+a:hover, a:focus, a:active {
+	color: white;
+	text-shadow: 1px 1px 2px blue, -1px 1px 2px blue, -1px -1px 4px deepskyblue, 1px -1px 4px deepskyblue;
+	transition-duration: .5s;
+}
+
+#welcomeDiv {
+	background: url("../img/wall2.jpg");
+}
+
+#mainLogo {
+	width: 150px;
+	margin: 15px auto;
+	padding: 8.5px 15px;
+	background: white;
+}
+
+#title_0 {
+	max-width: 350px;
+	margin: auto;
+	margin-top: 0px;
+	border-bottom: 5px solid black;
+}
+
+/* HORIZONTAL RULE */
+.hrToDownRight {
+	transform: rotateZ(2.5deg);
+	margin: 50px 0;
+}
+
+.hrToDownLeft {
+	transform: rotateZ(-2.5deg);
+	margin: 50px 0;
+}
+
+/* DIV BACKGROUNDS */
+
+/* PROJECTS  */
+.projectDiv {
+	position: relative;
+	padding: 25px 0 35px;
+	perspective: 500px;
+	background-attachment: fixed !important;
+	background-size: 100% !important;
+	background-repeat: no-repeat !important;
+	box-shadow: 0px 15px 25px white inset, 0px -15px 25px white inset;
+}
+
+#odomDiv {
+	background: url("../img/wall3.jpg");
+}
+
+#deciderDiv {
+	background: url("../img/wall5.jpg");
+}
+
+#backgroundsDiv {
+	background: url("../img/wall6.jpg");
+}
+
+#websiteDiv {
+	background: url("../img/wall7.jpg");
+}
+
+#comingSoonDiv {
+	background: url("../img/wall8.jpg");
+}
+
+.projectImg {
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+
+.projectDescritpion {
+	line-height: 25px;
+	max-width: 600px;
+	margin: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#odomImg,
+#deciderImg {
+	width: 200px;
+	height: 125px;
+	margin: 5px auto 10px;
+	background-size: 50% 80%;
+}
+
+#odomShadow,
+#deciderShadow {
+	position: absolute;
+	top: 110px;
+	left: 50%;
+	width: 110px;
+	height: 65px;
+	margin: 0;
+	margin-left: -55px;
+	background: linear-gradient(to bottom, rgba(0,0,0,0.1), black);
+	transform: rotateX(-70deg);
+	z-index: -1;
+}
+
+#deciderShadow  {
+	border-radius: 12.5px 12.5px 0 0;
+}
+
+h1 {
+	font-weight: 100;
+}
+
+.pTitle {
+	margin: 15px auto;
+}
+
+#title_1 span {
+	white-space: nowrap;
+	line-height: 35px;
+}
+
+.backgrounds {
+	width: 75px;
+	height: 100px;
+	margin: 5px auto 10px;
+	background-size: 100% 50%;
+}
+
+#comingSoonImg {
+	width: 100px;
+	height: 100px;
+	margin: 5px auto -5px;
+	background-size: 100% 100%;
+}
+
+.table {
+	margin: 0 auto;
+	background: linear-gradient(to right, rgba(0,0,0,0.3), ivory, rgba(0,0,0,0.3));
+}
+
+#top {
+	width: 150px;
+	height: 15px;
+	box-shadow: 0px -1px 1px rgba(0,0,0,0.7) inset;
+}
+
+#column {
+	width: 50px;
+	height: 100px;
+	background: linear-gradient(to right, rgba(0,0,0,0.3), ivory, rgba(0,0,0,0.3));
+	box-shadow: 0px 10px 2px rgba(0,0,0,0.5) inset;
+}
+
+#base {
+	width: 75px;
+	height: 10px;
+}
+
+#base2 {
+	width: 100px;
+	height: 15px;
+}
+
+#base3 {
+	width: 150px;
+	height: 20px;
+	margin-bottom: 25px;
+	box-shadow: 0px -1px 1px rgba(0,0,0,0.7) inset;
+}
+
+/* MEDIA QUERIES -- SMALL SCREENS */
+@media screen and (min-width: 500px) {
+	#mainLogo {
+		width: 250px;
+	}
+	
+	#title_0 {
+		font-size: 4em;
+	}
+	
+	#odomImg,
+	#deciderImg {
+		width: 300px;
+		height: 215px;
+		background-size: 50% 85%;
+	}
+
+	#odomShadow,
+	#deciderShadow {
+		top: 150px;
+		width: 175px;
+		height: 150px;
+		margin-left: -87.5px;
+	}
+	
+	.backgrounds {
+		width: 150px;
+		height: 150px;
+		margin: 5px auto 10px;
+		background-size: 100% 70%;
+	}
+}
