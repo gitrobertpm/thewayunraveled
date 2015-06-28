@@ -10,3 +10,4 @@ document.getElementById("layeredGradientImg").style.backgroundImage = "url('img/
 document.getElementById("websiteImg").style.backgroundImage = "url('img/pageSamples/twu2wp.jpg')";
 document.getElementById("websiteImg2").style.backgroundImage = "url('img/pageSamples/twu2hp.jpg')";
 document.getElementById("comingSoonImg").style.backgroundImage = "url('img/comingsoon.jpg')";
+

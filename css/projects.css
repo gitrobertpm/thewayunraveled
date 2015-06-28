@@ -23,10 +23,6 @@ a:hover, a:focus, a:active {
 	-webkit-transition-duration: .5s;transition-duration: .5s;
 }
 
-#welcomeDiv {
-	background: url("../img/wall2.jpg");
-}
-
 #mainLogo {
 	width: 150px;
 	margin: 15px auto;
@@ -63,26 +59,6 @@ a:hover, a:focus, a:active {
 	background-size: 100% !important;
 	background-repeat: no-repeat !important;
 	box-shadow: 0px 15px 25px white inset, 0px -15px 25px white inset;
-}
-
-#odomDiv {
-	background: url("../img/wall3.jpg");
-}
-
-#deciderDiv {
-	background: url("../img/wall5.jpg");
-}
-
-#backgroundsDiv {
-	background: url("../img/wall6.jpg");
-}
-
-#websiteDiv {
-	background: url("../img/wall7.jpg");
-}
-
-#comingSoonDiv {
-	background: url("../img/wall8.jpg");
 }
 
 .projectImg {
@@ -217,5 +193,33 @@ h1 {
 		height: 150px;
 		margin: 5px auto 10px;
 		background-size: 100% 70%;
+	}
+}
+
+
+/* MEDIA QUERIES -- large SCREENS */
+@media screen and (min-width: 1000px) {
+	#welcomeDiv {
+		background: url("../img/wall2.jpg");
+	}
+
+	#odomDiv {
+		background: url("../img/wall3.jpg");
+	}
+
+	#deciderDiv {
+		background: url("../img/wall5.jpg");
+	}
+
+	#backgroundsDiv {
+		background: url("../img/wall6.jpg");
+	}
+
+	#websiteDiv {
+		background: url("../img/wall7.jpg");
+	}
+
+	#comingSoonDiv {
+		background: url("../img/wall8.jpg");
 	}
 }

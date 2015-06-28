@@ -1,5 +1,17 @@
 // INDEX JS
 
+var iconClass = document.getElementsByClassName("container");
+
+function handleIE() {
+	if (navigator.userAgent.indexOf("Trident") > 0) {
+		for(i = 0; i < iconClass.length; i++) {
+			iconClass[i].setAttribute("style", "transform: scale(1)");
+		}
+	}
+};
+
+handleIE();
+
 ////////////////
 //ICON IMAGES//
 //////////////
