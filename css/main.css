@@ -182,6 +182,8 @@ button:disabled {
 
 #navTitle {
 	position: fixed;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 1.25em;
 	font-weight: bold;
 	text-align: left;
 	width: 100px;
@@ -231,6 +233,10 @@ footer ul a {
 	padding-left: 25px;
 	background-size: contain;
 	background-repeat: no-repeat;
+}
+
+footer ul:nth-of-type(2) a {
+	filter: grayscale(1);
 }
 
 footer li {

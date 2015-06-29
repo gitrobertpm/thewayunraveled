@@ -1,26 +1,9 @@
 /* INDEX CSS */
 
-#wrapper {
-	background: darkblue;
-	-webkit-animation: skyfall 4s ease-in-out .5s forwards;animation: skyfall 4s ease-in-out .5s forwards;
-}
-
-/* TURN NIGHT TO DAY */
-@-webkit-keyframes skyfall {
-	0% {background: darkblue;}
-	100% {background: deepskyblue;}
-}
-@keyframes skyfall {
-	0% {background: darkblue;}
-	100% {background: deepskyblue;}
-}
-
 #welcomeDiv {
 	position: relative;
 	padding-top: 50px;
 	padding-bottom: 1800px;
-	background: -webkit-radial-gradient(white 45%, rgba(255,255,255,0.7), rgba(225,225,225,0.3));background: radial-gradient(white 45%, rgba(255,255,255,0.7), rgba(225,225,225,0.3));
-	background-attachment: fixed;
 	overflow: hidden;
 }
 
@@ -35,6 +18,20 @@
 
 /* RED FLOWER STYLING AND OPENING ANIMATIONS -- MINIFIED */
 #flowerBox{position:relative;width:100px;height:100px;margin:35px auto;border-radius:50%;-webkit-animation:petalGlow 5s ease .5s forwards;animation:petalGlow 5s ease .5s forwards}@-webkit-keyframes petalGlow{0%{background:0 0;box-shadow:none;transform:rotateZ(0deg)}80%{background:0 0;box-shadow:none}90%{background:rgba(255,0,0,.3);box-shadow:1px 1px 2px #000,1px -1px 2px #000,-1px 1px 2px #000,-1px -1px 2px #000}100%{background:rgba(255,0,0,.3);box-shadow:1px 1px 2px #000,1px -1px 2px #000,-1px 1px 2px #000,-1px -1px 2px #000;transform:rotateZ(360deg)}}@keyframes petalGlow{0%{background:0 0;box-shadow:none;transform:rotateZ(0deg)}80%{background:0 0;box-shadow:none}90%{background:rgba(255,0,0,.3);box-shadow:1px 1px 2px #000,1px -1px 2px #000,-1px 1px 2px #000,-1px -1px 2px #000}100%{background:rgba(255,0,0,.3);box-shadow:1px 1px 2px #fff,1px -1px 2px #000,-1px 1px 2px #000,-1px -1px 2px #000;transform:rotateZ(360deg)}}.petal{position:absolute;left:50%;margin-left:-50px;width:0;height:0;border-style:solid;border-width:50px;border-radius:35%}#petal_1{border-color:rgba(255,0,0,.5) transparent transparent}#petal_2{border-color:rgba(240,0,0,.5) transparent transparent;-webkit-animation:petal_2 .5s ease .5s forwards;animation:petal_2 .5s ease .5s forwards}@-webkit-keyframes petal_2{from{transform:rotate(0deg)}to{transform:rotate(45deg)}}@keyframes petal_2{from{transform:rotate(0deg)}to{transform:rotate(45deg)}}#petal_3{border-color:rgba(225,0,0,.5) transparent transparent;-webkit-animation:petal_3 1s ease .5s forwards;animation:petal_3 1s ease .5s forwards}@-webkit-keyframes petal_3{from{transform:rotate(0deg)}to{transform:rotate(90deg)}}@keyframes petal_3{from{transform:rotate(0deg)}to{transform:rotate(90deg)}}#petal_4{border-color:rgba(210,0,0,.5) transparent transparent;-webkit-animation:petal_4 1.5s ease .5s forwards;animation:petal_4 1.5s ease .5s forwards}@-webkit-keyframes petal_4{from{transform:rotate(0deg)}to{transform:rotate(135deg)}}@keyframes petal_4{from{transform:rotate(0deg)}to{transform:rotate(135deg)}}#petal_5{border-color:rgba(195,0,0,.5) transparent transparent;-webkit-animation:petal_5 2s ease .5s forwards;animation:petal_5 2s ease .5s forwards}@-webkit-keyframes petal_5{from{transform:rotate(0deg)}to{transform:rotate(180deg)}}@keyframes petal_5{from{transform:rotate(0deg)}to{transform:rotate(180deg)}}#petal_6{border-color:rgba(180,0,0,.5) transparent transparent;-webkit-animation:petal_6 2.5s ease .5s forwards;animation:petal_6 2.5s ease .5s forwards}@-webkit-keyframes petal_6{from{transform:rotate(0deg)}to{transform:rotate(225deg)}}@keyframes petal_6{from{transform:rotate(0deg)}to{transform:rotate(225deg)}}#petal_7{border-color:rgba(165,0,0,.5) transparent transparent;-webkit-animation:petal_7 3s ease .5s forwards;animation:petal_7 3s ease .5s forwards}@-webkit-keyframes petal_7{from{transform:rotate(0deg)}to{transform:rotate(270deg)}}@keyframes petal_7{from{transform:rotate(0deg)}to{transform:rotate(270deg)}}#petal_8{border-color:rgba(150,0,0,.5) transparent transparent;-webkit-animation:petal_8 3.5s ease .5s forwards;animation:petal_8 3.5s ease .5s forwards}@-webkit-keyframes petal_8{from{transform:rotate(0deg)}to{transform:rotate(315deg)}}@keyframes petal_8{from{transform:rotate(0deg)}to{transform:rotate(315deg)}}#flowerBulb{position:absolute;top:35px;left:50%;width:25px;height:25px;margin-left:-12.5px;background:#fff;border-radius:50%}#flowerBulb p{font-size:30px;width:25px;height:25px;margin:-10px 0 0}
+
+#sub-header {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-style: italic;
+	font-size: 1.2em;
+}
+
+.mainTitle {
+	font-family: "Arial Black", Gadget, sans-serif;
+}
+
+#titleMS {
+	font-family: Georgia, serif;
+}
 
 .container {
 	position: absolute;
@@ -208,18 +205,18 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
-	-webkit-filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.3));
-	-ms-filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.3));
-	filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.3));
+	-webkit-filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.3)) sepia(.6);
+	-ms-filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.3)) sepia(.6);
+	filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.3)) sepia(.6);
 	-webkit-transition-duration: .5s;transition-duration: .5s;
 	-webkit-animation: iconHover 1s ease-in-out;animation: iconHover 1s ease-in-out;
 }
 
 .icon:active, .icon:focus, .icon:hover {
 	-webkit-transform: scale(1.1);-ms-transform: scale(1.1);transform: scale(1.1);
-	-webkit-filter: drop-shadow(20px 20px 15px rgba(0,0,0,0.2));
-	-ms-filter: drop-shadow(20px 20px 15px rgba(0,0,0,0.2));
-	filter: drop-shadow(20px 20px 15px rgba(0,0,0,0.2));
+	-webkit-filter: drop-shadow(20px 20px 15px rgba(0,0,0,0.2)) hue-rotate(360deg);
+	-ms-filter: drop-shadow(20px 20px 15px rgba(0,0,0,0.2)) hue-rotate(360deg);
+	filter: drop-shadow(20px 20px 15px rgba(0,0,0,0.2)) hue-rotate(360deg);
 	-webkit-transition-duration: .5s;transition-duration: .5s;
 }
 
@@ -280,9 +277,27 @@
 
 /* FOR LARGE SCREENS */
 @media screen and (min-width: 1100px){
+	#wrapper {
+		background: darkblue;
+		-webkit-animation: skyfall 4s ease-in-out .5s forwards;animation: skyfall 4s ease-in-out .5s forwards;
+	}
+
+	/* TURN NIGHT TO DAY */
+	@-webkit-keyframes skyfall {
+		0% {background: darkblue;}
+		100% {background: deepskyblue;}
+	}
+	@keyframes skyfall {
+		0% {background: darkblue;}
+		100% {background: deepskyblue;}
+	}
+	
 	#welcomeDiv {
 		padding-top: 250px;
 		padding-bottom: 450px;
+		background: -webkit-radial-gradient(rgba(225, 255, 255, .9) 42.5%, rgba(255,255,255,0.6), rgba(225,225,225,0.1));background: radial-gradient(rgba(225, 255, 255, .9) 42.5%, rgba(255,255,255,0.6), rgba(225,225,225,0.1));
+		background-attachment: fixed;
+		-webkit-animation: skyfall2 4s ease-in-out .5s forwards;animation: skyfall2 4s ease-in-out .5s forwards;
 	}
 	
 	/* STYLING FOR BACKGROUND ANIMATIONS */
