@@ -328,15 +328,15 @@ function aExperience() {
 		document.getElementById("aExperience").style.borderTop = "5px solid black";
 		document.getElementById("aExperience").style.borderBottom = "5px solid black";
 	} else if (width > 599 && width < 1100) {
-		set2("aExperience", "3650px", "100%", "white", "-50%", "999", "0");
-		document.getElementById("aboutSection2").style.height = "3650px";
+		set2("aExperience", "3950px", "100%", "white", "-50%", "999", "0");
+		document.getElementById("aboutSection2").style.height = "3950px";
 		document.getElementById("aExperience").style.borderBottom = "5px solid black";
 		document.getElementById("expBtn").style.position = "fixed";
 		document.getElementById("expBtn").style.top = "50px";
 		document.getElementById("expBtn").style.right = "5px";
 	} else if (width > 1099) {
-		set2("aExperience", "2750px", "100%", "white", "-50%", "999", "0");
-		document.getElementById("aboutSection2").style.height = "2750px";
+		set2("aExperience", "3000px", "100%", "white", "-50%", "999", "0");
+		document.getElementById("aboutSection2").style.height = "3000px";
 		document.getElementById("expBtn").style.position = "fixed";
 		document.getElementById("expBtn").style.top = "50px";
 		document.getElementById("expBtn").style.right = "5px";
