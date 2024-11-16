@@ -4,157 +4,31 @@
 		<meta charset="utf-8">
 		<title>The Way Unraveled</title>
 		<meta name="description" content="Something special">
-		<!-- <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" /> -->
+		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="css/index.css">
 		<style>
+			.title {
+				text-align: center;
+				margin: 100px auto 25px;
+			}
+			.signature {
+				text-align: center;
+				margin: 0 auto;
+			}
 			.msg {
 				text-align: center;
-				margin: 100px auto;
+				margin: 100px auto 50px;
 			}
 		</style>
 	</head>
-	<body onResize="window.location.href = window.location.href;">
-		<p class="msg">Something special coming soon! <br><br><br> ✌️</p>
-		<!-- <div id="wrapper" class="center">
-			<div id="nav" onclick="nav()">
-				<div id="innerNavWrapper">
-					<a href="index.html" id="navHome">HOME</a>
-					<a href="about.html" id="navAbout">ABOUT</a>
-					<a href="contact.html" id="navContact">CONTACT</a>
-					<a href="projects.html" id="navProjects">PROJETS</a>
-				</div>
-			</div>
-			<div id="navTitle"><p>NAV</p></div>
-			<div id="closeNav" onclick="closeNav()"><p>x</p></div>
-			<div id="welcomeDiv">
-			
-				<div id="moon" class="orb"></div>
-				<div id="star"></div>
-				<div id="star2"></div>
-				
-				<h2 class="title thin mainTitle">WELCOME TO</h2>
-				<div id="flowerBox">
-					<div id="petal_8" class="petal"></div>
-					<div id="petal_7" class="petal"></div>
-					<div id="petal_6" class="petal"></div>
-					<div id="petal_5" class="petal"></div>
-					<div id="petal_4" class="petal"></div>
-					<div id="petal_3" class="petal"></div>
-					<div id="petal_2" class="petal"></div>
-					<div id="petal_1" class="petal"></div>
-					<div id="flowerBulb">
-						<p>&#9775;</p>
-					</div>
-				</div>
-				<h2 class="title thin mainTitle">THE WAY UNRAVELED</h2>
-				<p id="sub-header">Where art, philosphy, <span class="smallerText">&amp;</span> code intersect</p>
-				
-				<div id="sun" class="orb"></div>
-				<div id="cloud"></div>
-				<div id="bird"></div>
-				
-				<div id="missionStatementDiv" class="container">
-					<div id="missionStatementIcon" class="icon clicker" onclick="missionStatement()"></div>
-					<h3 id="titleMS" class="center thin title">MISSION STATEMENT</h3>
-					<br>
-					<div id="msTextImg"></div>
-					<br>
-					<div id="innerMissionStatementDiv">
-						<div class="message left_M first_L" id="message_1">
-							<p class="explanation"><span>In the beginning, this site won't be much more than my own personal code laboratory and portfolio.</span></p>
-						</div>
-						<div class="message right_M first_R" id="message_2">
-							<p class="explanation">Besides design and user-interface, it will have a focus on compassion, inspiration, and imagination.</p>
-						</div>
-						<div class="message left_M second_L" id="message_3">
-							<p class="explanation">The hope is that after some tinkering, the Way Unraveled will grow into something more than just a simple portfolio site.</p>
-						</div>
-						<div class="message right_M second_R" id="message_4">
-							<p class="explanation">The general goal is to contribute in some way to the great and noble movement that is reaching to make the world a safer, easier, and more enjoyable place for all to live.</p>
-						</div>
-						
-					</div>
-					
-					<div id="coolGlobe"></div>
-					<br>
-					<button onclick="closeMS()">close</button>
-				</div>
-				
-				<div id="quoteDiv" class="container">
-					<div id="quoteIcon" class="icon clicker" onclick="quote()"></div>
-					<p class="darkGrey">Want a boost in the form of a random inspirational quote</p>
-					<br>
-					<div id="innerQuoteDiv"></div>
-					<button onclick="newQuote()">new quote</button>
-					<br>
-					<button onclick="closeQ()">close</button>
-				</div>
-				
-				<div id="encouragementDiv" class="container">
-					<div id="encouragementIcon" class="icon clicker" onclick="encouragement()"></div>
-					<p class="darkGrey">Want a little encouragement to help you get started</p>
-					<br>
-					<div id="innerEncouragementDiv"></div>
-					<button id="yes" onclick="yes();">Yes</button>
-					<button id="no" onclick="no();">No</button>
-					<br>
-					<button onclick="moreEncouragement()">more encouragement</button>
-					<br>
-					<button onclick="closeE()">close</button>
-				</div>
-				
-				<div id="aboutDiv" class="container">
-					<a href="about.html" id="aboutIcon" class="icon"></a>
-					<p class="darkGrey">Want to know more about this site or its author</p>
-				</div>
-				
-				<div id="contactDiv" class="container">
-					<a href="contact.html" id="contactIcon" class="icon"></a>
-					<p class="darkGrey">Want to say hi or tell me off</p>
-				</div>
-				
-				<div id="projectsDiv" class="container">
-					<a href="projects.html" id="projectsIcon" class="icon"></a>
-					<p class="darkGrey">Want to see what I've been working on</p>
-				</div>
-				
-				<div id="deciderDiv" class="container">
-					<a href="decider.html" id="deciderIcon" class="icon"></a>
-					<p class="darkGrey">Want help with a difficult decision</p>
-				</div>
-				
-				<div id="odomDiv" class="container">
-					<a href="odom.html" id="odomIcon" class="icon"></a>
-					<p class="darkGrey">Want to see how many space-miles you've traveled in your lifetime</p>
-				</div>
-				
-				<div id="resourcesDiv" class="container">
-					<a href="resources.html" id="resourcesIcon" class="icon"></a>
-					<p class="darkGrey">Want a list of resources that can help make you a better, smarter person</p>
-				</div>
-			</div>
-		</div>		
-		<footer>
-			<p class="center">Thanks for visiting!</p>
-			<ul>
-				<li><a href="index.html" id="homeLink" class="selected">home</a></li>
-				<li><a href="about.html" id="aboutLink">about</a></li>
-				<li><a href="contact.html" id="contactLink">contact</a></li>
-				<li><a href="projects.html" id="projectsLink">projects</a></li>
-			</ul>
-			<ul>
-				<li><a href="https://www.linkedin.com/pub/robert-manolis/b1/40a/34a" target="_blank" id="linkedin">linkedin</a></li>
-				<li><a href="https://github.com/gitrobertpm" target="_blank" id="github">github</a></li>
-				<li><a href="http://codepen.io/robertpm/" target="_blank" id="codepen">codepen</a></li>
-				<li><a href="https://www.behance.net/robertpm" target="_blank" id="behance">behance</a></li>
-				<li><a href="http://teamtreehouse.com/robertmanolis" target="_blank" id="treehouse">treehouse</a></li>
-			</ul>
-			<p class="center">&copy; Robert PM 2015 &copy;</p>
-		</footer>
-		<script src="js/main.js"></script>
-		<script src="js/index.js"></script> -->
+	<body>
+		<h1 class="title">THE WAY UNRAVELED</h1>
+
+		<p class="signature">◐ ☼ ◑</p>
+
+		<p class="msg">Something special coming soon! <br><br>✌️</p>
 	</body>
 </html>
 
